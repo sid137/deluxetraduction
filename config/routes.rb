@@ -7,7 +7,7 @@ Deluxe::Application.routes.draw do
   match 'services'  => 'site#service', :as  => :services
   match 'contact'  =>  'site#contact', :as  => :contact
   match 'news'  =>  'ste#news', :as  =>  :news
-  match 'mention'  =>  'site#mention', :as  => :mention
+  match 'mention'  =>  'site#mention', :as  => :mentions
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
