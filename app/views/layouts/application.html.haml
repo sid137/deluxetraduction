@@ -24,30 +24,30 @@
       %nav
         %ul
           %li<
-            = link_to "Accueil"
+            = link_to "Accueil", root_path
           %li<
-            = link_to "Notre savoir-faire"
+            = link_to "Notre savoir-faire", savoir_path
           %li<
-            = link_to "Langues et spécialités"
+            = link_to "Langues et spécialités", langues_path
           %li<
-            = link_to "Services Annexes"
+            = link_to "Services Annexes", services_path
           %li<
-            = link_to "Contact"
+            = link_to "Contact", contact_path
           %li<
-            = link_to "Actualités"
+            = link_to "Actualités", news_path
       #main
         = yield
       %footer
         #footer-links
           %ul
             %li<
-              = link_to "Mentions légales"
+              = link_to "Mentions légales", mentions_path
               %span |
             %li<
-              = link_to "contactez-nous" 
+              = link_to "contactez-nous", contact_path
               %span \|
             %li<
-              = link_to "créé par tanea services"
+              = link_to "créé par tanea services", 'http://www.taneaservices.fr/'
         #keywords
           %p
             Traduction courante technique scientifique
