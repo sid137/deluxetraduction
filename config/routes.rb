@@ -1,13 +1,15 @@
 Deluxe::Application.routes.draw do
-
+  
+  match ':lang'  => 'site#index'
   root :to => 'site#index'
-  match 'savoir'  => 'site#savoir', :as  => :savoir
-  match 'langues'  =>  'site#langues', :as  =>  :langues
-  match 'services'  => 'site#service', :as  => :services
-  match 'contact'  =>  'site#contact', :as  => :contact
-  match 'news'  =>  'site#news', :as  =>  :news
-  match 'mention'  =>  'site#mention', :as  => :mentions
+  match '(:lang)/savoir'  => 'site#savoir', :as  => :savoir
+  match '(:lang)/langues'  =>  'site#langues', :as  =>  :langues
+  match '(:lang)/services'  => 'site#service', :as  => :services
+  match '(:lang)/contact'  =>  'site#contact', :as  => :contact
+  match '(:lang)/news'  =>  'site#news', :as  =>  :news
+  match '(:lang)/mention'  =>  'site#mention', :as  => :mentions
 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

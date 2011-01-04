@@ -1,5 +1,92 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+
+  app:
+    title: "Welcome to Deluxe Translations"
+
+  header:
+    logo: 'Delux Traduction'
+    phrase: 'La Passion de Langage, La Qualite Delux.'
+    flag:
+      french: 'Francais'
+      english: 'English'
+    menu:
+      welcome: 'Welcome'
+      expertise: 'Our Expertise'
+      languages: "Languages and Specialties"
+      services:  "Additional Services"
+      contact: "Contact Us"
+      news: "News"
+
+  footer:
+    legal: "Legal Notice"
+    contact: "contact us"
+    designer: "Created by tanea services"
+    keywords: "Formal, informal, technical, and scientific tranlations in English, Italian, Spanish, Portuguese, German, Dutch, Russian, Japanese, Chinese, Arabic, Swedish, Norweigian, Finnish, Icelandic, Czech, Hungarian, Polish, Romanian, Hebrew, Thai, and more..."
+
+  index:
+    header: "Welcome to Deluxe Traduction"
+    p1: "We will help you communicate more effectively in numerous domains, in all languages. We carry out quality translations thanks to our selection of certified and highly trained translators who translate exclusively into their native languages."
+    p2: "Our staff is composed not only of specialized translators and editors, but also graphic designers and office assistants. This allows us to additionally offer you services of administrative assistance, audio and video transcription in multiple languages, telephone answering services, and the creation of web sites and logos."
+    link_more: 'More info'
+    p3: "We offer you : "
+    li1: 'A quotation in 24 hours'
+    li2: 'Quick and efficient work, verified by our professionals'
+    li3: 'A native translator specialized in your domain'
+    li4: 'A guarantee of confidentiality'
+
+
+  
+  skills:
+    header: "Our Expertise"
+    li1: 'Highly trained and educated translators, who perfectly master the latest translation methods and software.'
+    li2: 'Our translators translate exclusively into their native language, which guarantees you an excellent translation quality.'
+    li3: 'Your documents are translated by specialized translators (legal, technical, scientific, etc...) depending on your needs. These translators have many years of experience in the relevant domain, and thus have acquired both linguistic as well as technical expertise.'
+    li4: 'All of our translations are verified by a rigorous editorial process which is carried out by a second qualified translator, in order to guarantee you a quality translation.'
+    li5: 'Each of our contracts includes a confidentiality clause, which guarantees you complete discretion on the content of your documents.'
+
+
+  languages:
+    header: "Languages and Specialties"
+    p1: "We offer you translations to and from :"
+    p2: 'English, Italian, Spanish, Portuguese, German, Greek, Dutch, Flemish, Swedish, Norwegian, Icelandic, Russian, Czech, Hungarian, Polish, Romanian, Arabic, Hebrew, Chinese, Japanese, Thai, Vietnamese, Korean, Hindi, Turkish, and more...'
+    p3: 'We work with specialized translators in numerous domains, including :'
+    p4: 'Legal, Marketing, Medical, Technical, Tourism, Art/Culture, Economics, Computer Science, Information Technology, Finance, Business, Agriculture, Food, Architecture, Automotive, Biology, Communication, Accounting, Construction, Cosmetics, Editorial, Environmental, Journalism, Literary, Logistics, Pharmaceutical, Human Resources, Textiles, Transportation, Sports, Physics'
+
+
+
+  services:
+    header: "Additional Services"
+    p1: 'In order to offer you the best service possible, we surround ourselves with professionals who can respond to your needs in multiple domains.'
+    p2: 'We can also offer you the following services:'
+    li1:
+      bold: 'Remote office and administrative assistance.'
+      text: 'On-site work possible in Paris and in certain regions.'
+    li2:
+      bold: 'Writing and correction'
+      text: ' of letters, articles and website content (in multiple languages)'
+    li3:
+      bold: 'Audio and video transcription '
+      text: '(in multiple languages)'
+    li4:
+      bold: 'Websites '
+      text: ' and logo creation.'
+    li5:
+      bold: 'Telephone answering service'
+    p3: 'For more information on these offers, don't hesitate to call or contact us by email at '
+
+
+  contact_text:
+    p1: 'To request a quotation or any additional information, please contact us using the formula above.'
+    p2: 'Don't forget to attach the document to be translated.'
+    p3: 'The maximum file size is 10 MB, preferably in Word format  for a more rapid response. '
+
+  contact_info:
+    header: "Offices"
+    phone: "Tel."
+    portable: "Mob."
+    fax: "Fax"   
+
+  news:
+    header: "News"
+    p1: "Welcome"
+    p2: 'Welcome to Deluxe Traductions.  Here you can find our promotional offers.'

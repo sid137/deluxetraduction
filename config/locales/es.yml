@@ -1,0 +1,91 @@
+er:
+
+  app:
+    title: 
+
+  header:
+    logo: 
+    phrase: 
+    flag:
+      french: 'Francais'
+      english: 'English'
+    menu:
+      welcome: 
+      expertise: 
+      languages: 
+      services:  
+      contact:
+      news: 
+
+  footer:
+    legal:
+    contact: 
+    designer: 
+    keywords: 
+
+  index:
+    header: 
+    p1: 
+    p2: 
+    link_more: 
+    p3: 
+    li1: 
+    li2: 
+    li3: 
+    li4: 
+
+
+  
+  skills:
+    header: 
+    li1: 
+    li2: 
+    li3: 
+    li4: 
+    li5: 
+
+
+  languages:
+    header:
+    p1: 
+    p2: 
+    p3: 
+    p4: 
+
+
+
+  services:
+    header: 
+    p1: 
+    p2: 
+    li1:
+      bold: 
+      text: 
+    li2:
+      bold: 
+      text: 
+    li3:
+      bold: 
+      text: 
+    li4:
+      bold: 
+      text: 
+    li5:
+      bold: 
+    p3: 
+
+  contact_text:
+    p1: 
+    p2: 
+    p3: 
+
+  contact_info:
+    header: 
+    phone: 
+    portable: 
+    fax: 
+
+  news:
+    header:
+    p1: 
+    p2: 

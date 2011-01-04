@@ -1,5 +1,5 @@
 !!! 
-%html 
+%html(lang=@lang)
   %head
     %meta(charset='utf-8')
 
@@ -21,6 +21,7 @@
         #wlogo
           %h1 Deluxe Traducton. Agence de Traduction Anglais Francais Professionelle
       %hr
+      %h1(style="color:white")= "Language is #{@lang}"
       %nav
         %ul
           %li<
