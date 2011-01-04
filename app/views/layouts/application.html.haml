@@ -4,19 +4,16 @@
     %meta(charset='utf-8')
 
     %title Deluxe Traduction
-    = stylesheet_link_tag :all
 
-    %script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
+    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+    = stylesheet_link_tag "screen", :media => "screen, projection"
+    = stylesheet_link_tag "print", :media => "print"
 
-    <!-- Framework CSS -->
-    <link rel="stylesheet" href="stylesheets/screen.css" media="screen, projection" />
-    <link rel="stylesheet" href="stylesheets/print.css"  media="print" />
     <!--[if IE]><link href="stylesheets/ie.css" rel="stylesheet" /><![endif]-->
-
     <!-- HTML5 Shiv http://code.google.com/p/html5shiv/ -->
     <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 
-    %link(rel='shortcut icon' href='/favicon.ico')
+    = favicon_link_tag
 
   %body
     #container
@@ -27,30 +24,30 @@
       %nav
         %ul
           %li<
-            %a(href='#') Accueil
+            = link_to "Accueil"
           %li<
-            %a(href='#') Notre savoir-faire
+            = link_to "Notre savoir-faire"
           %li<
-            %a(href='#') Langues et  spécialités
+            = link_to "Langues et spécialités"
           %li<
-            %a(href='#') Services Annexes
+            = link_to "Services Annexes"
           %li<
-            %a(href='#') Contact
+            = link_to "Contact"
           %li<
-            %a(href='#') Actualités
+            = link_to "Actualités"
       #main
         = yield
       %footer
         #footer-links
           %ul
             %li<
-              %a(href='#') Mentions légales
+              = link_to "Mentions légales"
               %span |
             %li<
-              %a(href='#') contactez-nous 
-              %span \\|
+              = link_to "contactez-nous" 
+              %span \|
             %li<
-              %a(href='#') créé par tanea services
+              = link_to "créé par tanea services"
         #keywords
           %p
             Traduction courante technique scientifique

@@ -1,0 +1,206 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import blueprint/reset
+// To configure blueprint, edit the partials/_base.sass file.
+@import partials/base
+// Import all the default blueprint modules so that we can access their mixins.
+@import blueprint
+// Import the non-default scaffolding module.
+@import blueprint/scaffolding
+
+// Generate the blueprint framework according to your configuration:
+
+@import "compass/utilities/lists/horizontal-list"
+@import "compass/utilities/links"
+@import "compass/utilities/general/min"
+@import "compass/utilities/text/replacement"
+@import "compass/utilities/lists/inline-block-list"
+
+$nav_gold: #eec700
+$foot_white: #2c3651
+$foot_visit: #1f5b8b
+
+
++blueprint
++blueprint-scaffolding
+
+
+header, nav, footer 
+  +column($blueprint_grid_columns, true)
+
+body
+  background-color: black
+
+header
+  +prepend-top
+  +append-bottom
+ 
+
+#wlogo
+  border: 1px solid blue
+  +column(24, true)
+  +replace-text("website_header.png")
+  :width 770px
+  :height 129px
+
+//#logo
+  //border: 1px solid blue
+  //+column(6)
+  //+replace-text("logo2.png")
+  //:width 153px
+  //:height 126px
+
+//#subheader
+  //border: 1px solid green
+  //+column(19,true)
+  //+min-height(126px)
+  //h2
+    //border: 1px solid blue
+    //+column(13)
+    //+replace-text("phrase.png")
+    //:width 509px
+    //:height 36px
+    //margin-top: 41px
+  //#titflag
+    //border: 1px solid yellow
+  //#line
+    //border: 1px solid red
+    //margin-top: 41px
+
+#container
+  +container
+
+=nav-links
+  font-family: Imprint MT Shadow
+  font-size: 16px
+  opacity: 1.000000
+  filter: alpha(opacity=100)
+  text-decoration: none
+
+nav 
+  +prepend(3)
+  ul
+    +horizontal-list(15px)
+    //+inline-block-list(9px)
+    +append-bottom(0.5em)
+    li
+      margin-left: 10px
+      //border: 1px solid blue
+      //+column(3)
+      //width: 100px
+      text-align: center
+      a
+        +nav-links
+        +link-colors($nav_gold, white, $nav_gold, $nav_gold, $nav_gold)
+
+#main
+  +column(25, true)
+  +min-height(410px)
+  background: white 
+  border: 6px solid $nav_gold
+  padding-top: 2.5em
+  width: $blueprint-container-size - 20px
+
+
+#images
+  +column(11)
+  #obelisk
+    +column(4)
+    +prepend(1)
+  #arc
+    +column(4, true)
+    +prepend(1)
+
+
+
+=text-fictif-c
+  font-family: "Arial", sans-serif
+  font-size: 13.0px
+  line-height: 1.23em
+
+=bene-list
+  padding-left: 0.0px            
+  list-style-position: inside    
+  font-size: 13.3px              
+  line-height: 1.13em            
+  text-align: justify            
+
+#container
+  hr
+    +colspacer
+
+#content 
+  +column(12, true)
+  +prepend(1)
+  p
+    +text-fictif-c
+    +append-bottom
+    text-align: justify            
+    //font-weight: 600
+    a
+      color: black
+  ul
+    +bene-list
+    li
+      list-style-type: disc          
+      text-align: justify            
+  #title
+    font-size: large
+  .bienvenue
+    +replace-text("bienvenue.png",0,0)
+    width: 309px
+    height: 36px
+
+
+//to remove later
+footer
+  background: black 
+
+#footer-links
+  +column(10, true)  
+  +prepend(9)
+  +prepend-top
+  +append-bottom
+  ul
+    +horizontal-list
+    span
+      color: white
+      padding-left: 0.6em
+    a
+      +unstyled-link
+      +link-colors(white, white, white, white, white)
+      font-family: "Arial", sans-serif
+      font-size: 11.0px
+      line-height: 1.27em
+
+=keyword-text
+  font-family: "Arial", sans-serif
+  font-size: 9.0px                
+  line-height: 1.33em
+  color: #636363
+  text-align: center             
+
+#keywords
+  +column(25, true)
+  +keyword-text
+  
+
+
+
+.Normal-C
+  font-family: "Copperplate Gothic Light", sans-serif
+  font-size: 15.0px                                  
+  line-height: 1.07em                                
+  letter-spacing: 4.50px                             
+  color: #ffffff                                     
+
+.Normal-C2
+  font-family: "Arial", sans-serif
+  font-weight: 700
+  font-size: 19.0px
+  line-height: 1.21em
+
+.Texte-fictif-C0
+  font-family: "Arial", sans-serif
+  font-size: 4.0px
+  line-height: 1.25em
+
