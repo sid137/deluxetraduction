@@ -1,7 +1,7 @@
 Deluxe::Application.routes.draw do
-  
-  match ':lang'  => 'site#index'
-  root :to => 'site#index'
+
+  root :to => redirect("/#{I18n.locale}")
+  match ':lang'  => 'site#index', :as  => :index
   match '(:lang)/savoir'  => 'site#savoir', :as  => :savoir
   match '(:lang)/langues'  =>  'site#langues', :as  =>  :langues
   match '(:lang)/services'  => 'site#service', :as  => :services
