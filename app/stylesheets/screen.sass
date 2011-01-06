@@ -67,13 +67,6 @@ header
 #container
   +container
 
-=nav-links
-  font-family: Imprint MT Shadow
-  font-size: 16px
-  opacity: 1.000000
-  filter: alpha(opacity=100)
-  text-decoration: none
-
 nav 
   +prepend(3)
   ul
@@ -86,7 +79,11 @@ nav
       //width: 100px
       text-align: center
       a
-        +nav-links
+        font-family: Imprint MT Shadow
+        font-size: 16px
+        opacity: 1.000000
+        filter: alpha(opacity=100)
+        text-decoration: none
         +link-colors($nav_gold, white, $nav_gold, $nav_gold, $nav_gold)
 
 #main
@@ -119,14 +116,6 @@ nav
   +column(8)
   +prepend($img_prepend)
 
-
-=bene-list
-  padding-left: 0.0px            
-  list-style-position: inside    
-  font-size: 13.3px              
-  line-height: 1.13em            
-  text-align: justify            
-
 #container
   hr
     +colspacer
@@ -156,20 +145,6 @@ nav
       font-size: 13.0px
       line-height: 1.23em
 
-#contact_form
-  +column(8)
-  +prepend(1)
-  .hr.contact
-    +replace-text-with-dimensions('contact_separator.png')
-    +append-bottom
-
-
-#address
-  +column(8,true)
-  .hr.address
-    +replace-text-with-dimensions('address_separator.png')
-    +append-bottom
-
 #content.news
   +column(15,true)
   #news_content
@@ -193,7 +168,11 @@ nav
     a
       color: black
   ul
-    +bene-list
+    padding-left: 0.0px            
+    list-style-position: inside    
+    font-size: 13.3px              
+    line-height: 1.13em            
+    text-align: justify            
     li
       list-style-type: disc          
       text-align: justify            
@@ -204,6 +183,7 @@ nav
     //width: 309px
     //height: 36px
 
+
 #contact_form, #address
   span
     font-family: "Arial", sans-serif
@@ -211,13 +191,6 @@ nav
     font-size: 13.0px
     line-height: 1.23em 
     color: #2c3651
-
-#contact_form
-  text-align: justify
-  font-family: "Arial", sans-serif
-  font-weight: 700
-  font-size: 12.0px 
-  line-height: 1.25em 
 
 table
   tr
@@ -233,8 +206,24 @@ form
   +append-bottom
 
 
+#contact_form
+  +column(8)
+  +prepend(1)
+  text-align: justify
+  font-family: "Arial", sans-serif
+  font-weight: 700
+  font-size: 12.0px 
+  line-height: 1.25em 
+  .hr.contact
+    +replace-text-with-dimensions('contact_separator.png')
+    +append-bottom
+
 #address
+  +column(8,true)
   +prepend(0.5)
+  .hr.address
+    +replace-text-with-dimensions('address_separator.png')
+    +append-bottom
   p
     margin: 0
   #street
@@ -276,29 +265,21 @@ form
       color: white
       padding-left: 0.6em
     a
-      +unstyled-link
+      text-decoration: none
       +link-colors(white, white, white, white, white)
       font-family: "Arial", sans-serif
       font-size: 11.0px
       line-height: 1.27em
 
-=keyword-text
+#keywords
+  +column(25, true)
   font-family: "Arial", sans-serif
   font-size: 9.0px                
   line-height: 1.33em
   color: #636363
   text-align: center             
 
-#keywords
-  +column(25, true)
-  +keyword-text
-
-
-
-.Normal-C
-  font-family: "Copperplate Gothic Light", sans-serif
-  font-size: 15.0px                                  
-  line-height: 1.07em                                
-  letter-spacing: 4.50px                             
-  color: #ffffff                                     
-
+#mentions
+  +prepend(0.5)
+  font-size: 13.0px
+  line-height: 1.27em
