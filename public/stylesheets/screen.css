@@ -1138,7 +1138,7 @@ input.span-25, textarea.span-25, select.span-25 {
 
 /* line 8, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_debug.scss */
 .showgrid {
-  background: url('/images/grid.png?1294101541');
+  background: url('/images/grid.png?1294101895');
 }
 
 /* line 4, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_interaction.scss */
@@ -1333,7 +1333,7 @@ form.inline p {
   margin-bottom: 0;
 }
 
-/* line 27, ../../app/stylesheets/screen.sass */
+/* line 28, ../../app/stylesheets/screen.sass */
 header, nav, footer {
   display: inline;
   float: left;
@@ -1345,20 +1345,19 @@ header, nav, footer {
   overflow-x: hidden;
 }
 
-/* line 30, ../../app/stylesheets/screen.sass */
+/* line 31, ../../app/stylesheets/screen.sass */
 body {
   background-color: black;
 }
 
-/* line 33, ../../app/stylesheets/screen.sass */
+/* line 34, ../../app/stylesheets/screen.sass */
 header {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 38, ../../app/stylesheets/screen.sass */
+/* line 39, ../../app/stylesheets/screen.sass */
 #wlogo {
-  border: 1px solid blue;
   display: inline;
   float: left;
   margin-right: 0;
@@ -1366,7 +1365,7 @@ header {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/website_header.png');
+  background-image: url('/images/website_header.png?1294101895');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 770px;
@@ -1377,7 +1376,7 @@ header {
   overflow-x: hidden;
 }
 
-/* line 69, ../../app/stylesheets/screen.sass */
+/* line 67, ../../app/stylesheets/screen.sass */
 #container {
   width: 990px;
   margin: 0 auto;
@@ -1385,11 +1384,11 @@ header {
   *zoom: 1;
 }
 
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 77, ../../app/stylesheets/screen.sass */
 nav {
   padding-left: 120px;
 }
-/* line 81, ../../app/stylesheets/screen.sass */
+/* line 79, ../../app/stylesheets/screen.sass */
 nav ul {
   margin: 0;
   padding: 0;
@@ -1418,12 +1417,12 @@ nav ul li:first-child, nav ul li.first {
 nav ul li:last-child, nav ul li.last {
   padding-right: 0;
 }
-/* line 85, ../../app/stylesheets/screen.sass */
+/* line 83, ../../app/stylesheets/screen.sass */
 nav ul li {
   margin-left: 10px;
   text-align: center;
 }
-/* line 91, ../../app/stylesheets/screen.sass */
+/* line 88, ../../app/stylesheets/screen.sass */
 nav ul li a {
   font-family: Imprint MT Shadow;
   font-size: 16px;
@@ -1449,7 +1448,7 @@ nav ul li a:active {
   color: #eec700;
 }
 
-/* line 95, ../../app/stylesheets/screen.sass */
+/* line 92, ../../app/stylesheets/screen.sass */
 #main {
   display: inline;
   float: left;
@@ -1468,19 +1467,8 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 104, ../../app/stylesheets/screen.sass */
-#images {
-  display: inline;
-  float: left;
-  margin-right: 10px;
-  width: 430px;
-}
-/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #images {
-  overflow-x: hidden;
-}
-/* line 106, ../../app/stylesheets/screen.sass */
-#images #obelisk {
+/* line 100, ../../app/stylesheets/screen.sass */
+#obelisk {
   display: inline;
   float: left;
   margin-right: 10px;
@@ -1488,23 +1476,89 @@ nav ul li a:active {
   padding-left: 40px;
 }
 /* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #images #obelisk {
-  overflow-x: hidden;
-}
-/* line 109, ../../app/stylesheets/screen.sass */
-#images #arc {
-  display: inline;
-  float: left;
-  margin-right: 0;
-  width: 150px;
-  padding-left: 40px;
-}
-/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #images #arc {
+* html #obelisk {
   overflow-x: hidden;
 }
 
-/* line 128, ../../app/stylesheets/screen.sass */
+/* line 103, ../../app/stylesheets/screen.sass */
+#arc {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 150px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #arc {
+  overflow-x: hidden;
+}
+
+/* line 106, ../../app/stylesheets/screen.sass */
+#neuf {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #neuf {
+  overflow-x: hidden;
+}
+
+/* line 109, ../../app/stylesheets/screen.sass */
+#fountain {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 350px;
+  padding-left: 20px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #fountain {
+  overflow-x: hidden;
+}
+
+/* line 112, ../../app/stylesheets/screen.sass */
+#louvre {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  padding-left: 20px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #louvre {
+  overflow-x: hidden;
+}
+
+/* line 115, ../../app/stylesheets/screen.sass */
+#contact {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #contact {
+  overflow-x: hidden;
+}
+
+/* line 118, ../../app/stylesheets/screen.sass */
+#news {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  padding-left: 20px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #news {
+  overflow-x: hidden;
+}
+
+/* line 131, ../../app/stylesheets/screen.sass */
 #container hr {
   background: #dddddd;
   color: #dddddd;
@@ -1519,19 +1573,150 @@ nav ul li a:active {
   visibility: hidden;
 }
 
-/* line 131, ../../app/stylesheets/screen.sass */
-#content {
+/* line 134, ../../app/stylesheets/screen.sass */
+#content.index {
   display: inline;
   float: left;
   margin-right: 0;
   width: 470px;
+  padding-left: 80px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.index {
+  overflow-x: hidden;
+}
+
+/* line 138, ../../app/stylesheets/screen.sass */
+#content.savoir {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 670px;
   padding-left: 40px;
 }
 /* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #content {
+* html #content.savoir {
   overflow-x: hidden;
 }
-/* line 134, ../../app/stylesheets/screen.sass */
+/* line 141, ../../app/stylesheets/screen.sass */
+#content.savoir ul li {
+  list-style-type: upper-roman;
+  margin-top: 1.5em;
+}
+
+/* line 145, ../../app/stylesheets/screen.sass */
+#content.langues {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.langues {
+  overflow-x: hidden;
+}
+
+/* line 148, ../../app/stylesheets/screen.sass */
+#content.services {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.services {
+  overflow-x: hidden;
+}
+/* line 151, ../../app/stylesheets/screen.sass */
+#content.services ul li {
+  margin-top: 0.25em;
+}
+/* line 153, ../../app/stylesheets/screen.sass */
+#content.services ul li span {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.23em;
+}
+
+/* line 159, ../../app/stylesheets/screen.sass */
+#contact_form {
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 310px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #contact_form {
+  overflow-x: hidden;
+}
+/* line 162, ../../app/stylesheets/screen.sass */
+#contact_form .hr.contact {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/contact_separator.png?1294101895');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 309px;
+  height: 4px;
+  margin-bottom: 1.5em;
+}
+
+/* line 167, ../../app/stylesheets/screen.sass */
+#address {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 310px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #address {
+  overflow-x: hidden;
+}
+/* line 169, ../../app/stylesheets/screen.sass */
+#address .hr.address {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/address_separator.png?1294101895');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 256px;
+  height: 4px;
+  margin-bottom: 1.5em;
+}
+
+/* line 173, ../../app/stylesheets/screen.sass */
+#content.news {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 590px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.news {
+  overflow-x: hidden;
+}
+/* line 175, ../../app/stylesheets/screen.sass */
+#content.news #news_content {
+  padding: 4px;
+  border: 1px solid #eec700;
+}
+/* line 178, ../../app/stylesheets/screen.sass */
+#content.news #news_content p {
+  font-size: x-small;
+  font-family: "arial,helvetica,sans-serif";
+}
+/* line 181, ../../app/stylesheets/screen.sass */
+#content.news #news_content p span {
+  font-size: 10pt;
+  font-family: "Arial Black";
+}
+
+/* line 186, ../../app/stylesheets/screen.sass */
 #content p {
   font-family: "Arial", sans-serif;
   font-size: 13px;
@@ -1539,11 +1724,11 @@ nav ul li a:active {
   margin-bottom: 1.5em;
   text-align: justify;
 }
-/* line 139, ../../app/stylesheets/screen.sass */
+/* line 193, ../../app/stylesheets/screen.sass */
 #content p a {
   color: black;
 }
-/* line 141, ../../app/stylesheets/screen.sass */
+/* line 195, ../../app/stylesheets/screen.sass */
 #content ul {
   padding-left: 0px;
   list-style-position: inside;
@@ -1551,33 +1736,135 @@ nav ul li a:active {
   line-height: 1.13em;
   text-align: justify;
 }
-/* line 143, ../../app/stylesheets/screen.sass */
+/* line 197, ../../app/stylesheets/screen.sass */
 #content ul li {
   list-style-type: disc;
   text-align: justify;
 }
-/* line 146, ../../app/stylesheets/screen.sass */
+/* line 200, ../../app/stylesheets/screen.sass */
 #content #title {
   font-size: large;
 }
-/* line 148, ../../app/stylesheets/screen.sass */
-#content .bienvenue {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('/images/bienvenue.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  width: 309px;
-  height: 36px;
+
+/* line 208, ../../app/stylesheets/screen.sass */
+#contact_form span, #address span {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.23em;
+  color: #2c3651;
 }
 
-/* line 155, ../../app/stylesheets/screen.sass */
-footer {
-  background: black;
+/* line 215, ../../app/stylesheets/screen.sass */
+#contact_form {
+  text-align: justify;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25em;
 }
 
-/* line 158, ../../app/stylesheets/screen.sass */
+/* line 224, ../../app/stylesheets/screen.sass */
+table tr td {
+  vertical-align: top;
+  padding: 0 0 0 0;
+}
+/* line 227, ../../app/stylesheets/screen.sass */
+table tr td input, table tr td textarea {
+  padding-left: 0;
+}
+/* line 229, ../../app/stylesheets/screen.sass */
+table tr td label {
+  font-weight: 400;
+}
+
+/* line 231, ../../app/stylesheets/screen.sass */
+form {
+  margin-bottom: 1.5em;
+}
+/* line 48, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form input.text, form input.title, form input[type=email], form input[type=text], form input[type=password] {
+  width: 199px;
+}
+/* line 50, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_form.scss */
+form textarea {
+  width: 200px;
+  height: 86px;
+}
+
+/* line 236, ../../app/stylesheets/screen.sass */
+#address {
+  padding-left: 20px;
+}
+/* line 238, ../../app/stylesheets/screen.sass */
+#address p {
+  margin: 0;
+}
+/* line 240, ../../app/stylesheets/screen.sass */
+#address #street {
+  margin-bottom: 1.5em;
+  display: inline;
+  float: left;
+  margin-right: 10px;
+  width: 190px;
+}
+/* line 138, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #address #street {
+  overflow-x: hidden;
+}
+/* line 243, ../../app/stylesheets/screen.sass */
+#address #phone {
+  margin-bottom: 1.5em;
+}
+/* line 246, ../../app/stylesheets/screen.sass */
+#address #online a {
+  color: black;
+}
+/* line 18, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#address #online a:visited {
+  color: black;
+}
+/* line 21, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#address #online a:focus {
+  color: black;
+}
+/* line 24, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#address #online a:hover {
+  color: black;
+}
+/* line 27, ../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/utilities/links/_link-colors.scss */
+#address #online a:active {
+  color: black;
+}
+/* line 248, ../../app/stylesheets/screen.sass */
+#address p.title {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.23em;
+}
+/* line 253, ../../app/stylesheets/screen.sass */
+#address p.address {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.23em;
+}
+/* line 257, ../../app/stylesheets/screen.sass */
+#address p.email {
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.23em;
+  text-decoration: underline;
+}
+/* line 263, ../../app/stylesheets/screen.sass */
+#address p.link {
+  font-family: "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.85em;
+}
+
+/* line 268, ../../app/stylesheets/screen.sass */
 #footer-links {
   display: inline;
   float: left;
@@ -1591,7 +1878,7 @@ footer {
 * html #footer-links {
   overflow-x: hidden;
 }
-/* line 163, ../../app/stylesheets/screen.sass */
+/* line 273, ../../app/stylesheets/screen.sass */
 #footer-links ul {
   margin: 0;
   padding: 0;
@@ -1619,12 +1906,12 @@ footer {
 #footer-links ul li:last-child, #footer-links ul li.last {
   padding-right: 0;
 }
-/* line 165, ../../app/stylesheets/screen.sass */
+/* line 275, ../../app/stylesheets/screen.sass */
 #footer-links ul span {
   color: white;
   padding-left: 0.6em;
 }
-/* line 168, ../../app/stylesheets/screen.sass */
+/* line 278, ../../app/stylesheets/screen.sass */
 #footer-links ul a {
   color: inherit;
   text-decoration: inherit;
@@ -1655,7 +1942,7 @@ footer {
   color: white;
 }
 
-/* line 182, ../../app/stylesheets/screen.sass */
+/* line 292, ../../app/stylesheets/screen.sass */
 #keywords {
   display: inline;
   float: left;
@@ -1672,26 +1959,11 @@ footer {
   overflow-x: hidden;
 }
 
-/* line 189, ../../app/stylesheets/screen.sass */
+/* line 298, ../../app/stylesheets/screen.sass */
 .Normal-C {
   font-family: "Copperplate Gothic Light", sans-serif;
   font-size: 15px;
   line-height: 1.07em;
   letter-spacing: 4.5px;
   color: white;
-}
-
-/* line 196, ../../app/stylesheets/screen.sass */
-.Normal-C2 {
-  font-family: "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 1.21em;
-}
-
-/* line 202, ../../app/stylesheets/screen.sass */
-.Texte-fictif-C0 {
-  font-family: "Arial", sans-serif;
-  font-size: 4px;
-  line-height: 1.25em;
 }

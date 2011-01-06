@@ -1,5 +1,5 @@
 !!! 
-%html(lang=@lang)
+%html(lang='fr')
   %head
     %meta(charset='utf-8')
 
@@ -21,21 +21,14 @@
         #wlogo
           %h1 Deluxe Traducton. Agence de Traduction Anglais Francais Professionelle
       %hr
-      %h1(style="color:white")= "Language is #{@lang}"
       %nav
         %ul
-          %li<
-            = link_to "Accueil", index_path
-          %li<
-            = link_to "Notre savoir-faire", savoir_path
-          %li<
-            = link_to "Langues et spécialités", langues_path
-          %li<
-            = link_to "Services Annexes", services_path
-          %li<
-            = link_to "Contact", contact_path
-          %li<
-            = link_to "Actualités", news_path
+          %li= link_to "Accueil", index_path
+          %li= link_to "Notre savoir-faire", savoir_path
+          %li= link_to "Langues et spécialités", langues_path
+          %li= link_to "Services Annexes", services_path
+          %li= link_to "Contact", contact_path
+          %li= link_to "Actualités", news_path
       #main
         = yield
       %footer
@@ -43,22 +36,14 @@
           %ul
             %li<
               = link_to "Mentions légales", mentions_path
-              %span |
+              <span> | </span>
             %li<
               = link_to "contactez-nous", contact_path
-              %span \|
+              <span> | </span>
             %li<
               = link_to "créé par tanea services", 'http://www.taneaservices.fr/'
         #keywords
-          %p
-            Traduction courante technique scientifique
-            Anglais, Italien, Espagnol, Portugais,
-            Allemand,
-            Néerlandais,Russe, Japonais,
-            Chinois, Arabe, Suédois, Norvégien, Finnois,
-            Islandais,
-            Tchèque, Hongrois, Polonais, Roumain, Hébreu,
-            Thaï...
+          %p Traduction courante technique scientifique Anglais, Italien, Espagnol, Portugais, Allemand, Néerlandais,Russe, Japonais, Chinois, Arabe, Suédois, Norvégien, Finnois, Islandais, Tchèque, Hongrois, Polonais, Roumain, Hébreu, Thaï...
 
 
 

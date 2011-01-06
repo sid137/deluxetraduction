@@ -1,6 +1,43 @@
-#images
-  #contact
-    = image_tag "contact.png"
-#content
-  #contact_form
-  #address
+#contact
+  = image_tag "contact.png"
+#contact_form
+  %span Contactez-nous
+  .hr.contact
+  = form_tag 'http://www.serifwebresources.com/form.php?uid=651fb134170ae508a22c6b41f2593de2', :multipart => true do
+    %table
+      %tr
+        %td= label_tag 'name', 'Nom:'
+        %td= text_field_tag 'name', nil, :size => 29, :maxlength => 50
+      %tr
+        %td= label_tag 'email', 'Adresse e-mail :'
+        %td= text_field_tag 'email', nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'comments', 'Commentaires :'
+        %td= text_area_tag 'comments', nil, :rows => 5, :cols => 22
+      %tr
+        %td
+        %td= file_field_tag 'attachment', :size => 15
+      %tr
+        %td
+        %td= submit_tag 'Envoyer'
+
+  %p Pour toute demande de devis ou d’information merci de nous contacter en utilisant le formulaire ci-dessus.
+  %p 
+    N'oubliez pas de joindre le document à traduire. <br />
+    La taille du fichier doit être inférieure à 10Mo, de préférence sous format word  pour une estimation plus rapide .
+
+#address
+  %span Siège
+  .hr.address
+  #street
+    %p.title Deluxe Traduction
+    %p.address 5 Villa de l’Astrolabe
+    %p.address 75015 Paris
+  =image_tag 'mail.png'
+  #phone
+    %p.address Tél. :   (+33) 9 65 12 77 01
+    %p.address Mob. : (+33) 6 65 13 09 63
+    %p.address Fax :   (+33) 1 72 70 32 86
+  #online
+    %p.email #{mail_to 'contact@deluxetraduction.com', nil, :encoding => 'javascript'}
+    %p.link #{link_to index_url}

@@ -4,7 +4,6 @@ class SiteController < ApplicationController
 
   def set_locale
     I18n.locale = params[:lang]
-    @lang = params[:lang] || 'fr,'
   end 
 
 end

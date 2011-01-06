@@ -19,6 +19,7 @@ $nav_gold: #eec700
 $foot_white: #2c3651
 $foot_visit: #1f5b8b
 
+$img_prepend: 0.5
 
 +blueprint
 +blueprint-scaffolding
@@ -36,14 +37,12 @@ header
  
 
 #wlogo
-  border: 1px solid blue
   +column(24, true)
   +replace-text("website_header.png")
   :width 770px
   :height 129px
 
 //#logo
-  //border: 1px solid blue
   //+column(6)
   //+replace-text("logo2.png")
   //:width 153px
@@ -54,7 +53,6 @@ header
   //+column(19,true)
   //+min-height(126px)
   //h2
-    //border: 1px solid blue
     //+column(13)
     //+replace-text("phrase.png")
     //:width 509px
@@ -84,7 +82,6 @@ nav
     +append-bottom(0.5em)
     li
       margin-left: 10px
-      //border: 1px solid blue
       //+column(3)
       //width: 100px
       text-align: center
@@ -100,22 +97,28 @@ nav
   padding-top: 2.5em
   width: $blueprint-container-size - 20px
 
+#obelisk
+  +column(4)
+  +prepend(1)
+#arc
+  +column(4)
+  +prepend(1)
+#neuf
+  +column(5)
+  +prepend(1)
+#fountain
+  +column(9)
+  +prepend($img_prepend)
+#louvre
+  +column(8)
+  +prepend($img_prepend)
+#contact
+  +column(5)
+  +prepend(1)
+#news
+  +column(8)
+  +prepend($img_prepend)
 
-#images
-  +column(11)
-  #obelisk
-    +column(4)
-    +prepend(1)
-  #arc
-    +column(4, true)
-    +prepend(1)
-
-
-
-=text-fictif-c
-  font-family: "Arial", sans-serif
-  font-size: 13.0px
-  line-height: 1.23em
 
 =bene-list
   padding-left: 0.0px            
@@ -128,11 +131,62 @@ nav
   hr
     +colspacer
 
-#content 
+#content.index
   +column(12, true)
+  +prepend(2)  
+
+#content.savoir
+  +column(17, true)
+  +prepend(1)  
+  ul li 
+    list-style-type: upper-roman
+    +prepend-top
+
+#content.langues
+  +column(14, true)
+
+#content.services
+  +column(14,true)
   +prepend(1)
+  ul li 
+    +prepend-top(0.25em)
+    span
+      font-family: "Arial", sans-serif
+      font-weight: 700
+      font-size: 13.0px
+      line-height: 1.23em
+
+#contact_form
+  +column(8)
+  +prepend(1)
+  .hr.contact
+    +replace-text-with-dimensions('contact_separator.png')
+    +append-bottom
+
+
+#address
+  +column(8,true)
+  .hr.address
+    +replace-text-with-dimensions('address_separator.png')
+    +append-bottom
+
+#content.news
+  +column(15,true)
+  #news_content
+    padding: 4px
+    border: 1px solid $nav_gold
+    p 
+      font-size: x-small
+      font-family: "arial,helvetica,sans-serif"
+      span
+        font-size: 10pt
+        font-family: "Arial Black"
+
+#content 
   p
-    +text-fictif-c
+    font-family: "Arial", sans-serif
+    font-size: 13.0px
+    line-height: 1.23em
     +append-bottom
     text-align: justify            
     //font-weight: 600
@@ -145,15 +199,71 @@ nav
       text-align: justify            
   #title
     font-size: large
-  .bienvenue
-    +replace-text("bienvenue.png",0,0)
-    width: 309px
-    height: 36px
+  //.bienvenue
+    //+replace-text("bienvenue.png",0,0)
+    //width: 309px
+    //height: 36px
+
+#contact_form, #address
+  span
+    font-family: "Arial", sans-serif
+    font-weight: 700 
+    font-size: 13.0px
+    line-height: 1.23em 
+    color: #2c3651
+
+#contact_form
+  text-align: justify
+  font-family: "Arial", sans-serif
+  font-weight: 700
+  font-size: 12.0px 
+  line-height: 1.25em 
+
+table
+  tr
+    td
+      vertical-align: top
+      padding: 0 0 0 0
+      input, textarea
+        padding-left: 0
+      label
+        font-weight: 400
+form
+  +blueprint_form_sizes(199px, 200px, 86px)
+  +append-bottom
 
 
-//to remove later
-footer
-  background: black 
+#address
+  +prepend(0.5)
+  p
+    margin: 0
+  #street
+    +append-bottom
+    +column(5)
+  #phone
+    +append-bottom
+  #online
+    a
+      +link-colors(black, black, black, black, black)
+  p.title
+    font-family: "Arial", sans-serif
+    font-weight: 700
+    font-size: 13.0px
+    line-height: 1.23em
+  p.address
+    font-family: "Arial", sans-serif
+    font-size: 13.0px
+    line-height: 1.23em
+  p.email
+    font-family: "Arial", sans-serif
+    font-weight: 700 
+    font-size: 13.0px
+    line-height: 1.23em 
+    text-decoration: underline
+  p.link
+    font-family: "Arial", sans-serif
+    font-size: 13.0px 
+    line-height: 1.85em
 
 #footer-links
   +column(10, true)  
@@ -182,7 +292,6 @@ footer
 #keywords
   +column(25, true)
   +keyword-text
-  
 
 
 
@@ -192,15 +301,4 @@ footer
   line-height: 1.07em                                
   letter-spacing: 4.50px                             
   color: #ffffff                                     
-
-.Normal-C2
-  font-family: "Arial", sans-serif
-  font-weight: 700
-  font-size: 19.0px
-  line-height: 1.21em
-
-.Texte-fictif-C0
-  font-family: "Arial", sans-serif
-  font-size: 4.0px
-  line-height: 1.25em
 

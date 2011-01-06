@@ -1,7 +1,6 @@
-#images
-  #louvre
-    = image_tag "louvre.png"
-#content
+#louvre
+  = image_tag "louvre.png"
+#content.services
   %p#title.services Services annexes
   %p Afin de vous offrir le meilleur service possible, nous nous entourons de professionnels pouvant répondre à vos besoins dans plusieurs domaines.
   %p Ainsi nous proposons également :
@@ -11,4 +10,4 @@
     %li <span>Retranscription</span> audio et vidéo (en plusieurs langues)
     %li <span>Création de sites</span> internet et logos.
     %li <span>Permanence téléphonique</span>
-  %p Pour tous renseignements sur ces prestations, n'hésitez pas à nous appeler ou nous contacter par e-mail à contact@deluxetraduction.com.
+  %p Pour tous renseignements sur ces prestations, n'hésitez pas à nous appeler ou nous contacter par e-mail à #{mail_to 'contact@deluxetraduction.com', nil, :encode => 'javascript'}.
