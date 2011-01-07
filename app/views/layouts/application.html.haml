@@ -28,8 +28,8 @@
         #subheader
           #phrase
           #ribbon
-          #french= link_to image_tag('fr.png')
-          #english= link_to image_tag('en.png')
+          #french= link_to image_tag('fr.png'), url_for(:lang => 'fr')
+          #english= link_to image_tag('en.png'), url_for(:lang => 'en')
           #bar
 
       %hr
