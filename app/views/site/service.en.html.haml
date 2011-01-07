@@ -1,7 +1,6 @@
-#images
-  #louvre
-    = image_tag "louvre.png"
-#content
+#louvre
+  = image_tag "louvre.png"
+#content.services
   %p#title.services Additional Services
   %p In order to offer you the best service possible, we surround ourselves with professionals who can respond to your needs in multiple domains.
   %p We can also offer you the following services:
@@ -11,4 +10,4 @@
     %li <span>Audio and video transcription</span> (in multiple languages)
     %li <span>Website</span> and logo creation.
     %li <span>Telephone answering service</span>
-  %p For more information on these offers, don't hesitate to call or contact us by email at contact@deluxetraduction.com 
+  %p For more information on these offers, don't hesitate to call or contact us by email at #{mail_to 'contact@deluxetraduction.com', nil, :encode => 'javascript'} 
