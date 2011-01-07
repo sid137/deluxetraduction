@@ -9,6 +9,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'haml'
 
+group :production do
+    gem 'rack-google_analytics', :require => "rack/google_analytics"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -32,3 +35,4 @@ gem 'haml'
 # group :development, :test do
 #   gem 'webrat'
 # end
+
