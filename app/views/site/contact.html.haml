@@ -4,19 +4,20 @@
   %span Contactez-nous
   .hr.contact
   = form_tag 'http://www.serifwebresources.com/form.php?uid=651fb134170ae508a22c6b41f2593de2', :multipart => true do
+    %input(type="hidden" name="captcha_gateway" value="1")
     %table
       %tr
-        %td= label_tag 'name', 'Nom:'
-        %td= text_field_tag 'name', nil, :size => 29, :maxlength => 50
+        %td= label_tag 'NOM', 'Nom:'
+        %td= text_field_tag 'NOM', nil, :size => 29, :maxlength => 50
       %tr
-        %td= label_tag 'email', 'Adresse e-mail :'
-        %td= text_field_tag 'email', nil, :size => 29, :maxlength => 100
+        %td= label_tag 'E-MAIL', 'Adresse e-mail :'
+        %td= text_field_tag 'E-MAIL', nil, :size => 29, :maxlength => 100
       %tr
-        %td= label_tag 'comments', 'Commentaires :'
-        %td= text_area_tag 'comments', nil, :rows => 5, :cols => 22
+        %td= label_tag 'COMMENTAIRE', 'Commentaires :'
+        %td= text_area_tag 'COMMENTAIRE', nil, :rows => 5, :cols => 22
       %tr
         %td
-        %td= file_field_tag 'attachment', :size => 15
+        %td= file_field_tag 'fichier_2', :size => 15
       %tr
         %td
         %td= submit_tag 'Envoyer'
