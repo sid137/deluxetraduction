@@ -34,13 +34,83 @@ body
 header
   +prepend-top
   +append-bottom
- 
+//  +showgrid 
 
 #wlogo
   +column(24, true)
-  +replace-text("website_header.png")
-  :width 770px
-  :height 129px
+  //+replace-text-with-dimensions("website_header.png")
+
+
+$logo-height: image-height('logo_orig.png')
+$header-height: $logo-height
+$bar-height: image-height('yellowbar.png')
+$subheader-height: $header-height - $bar-height
+@debug $logo-height
+@debug $blueprint-grid-columns
+@debug $header-height
+
+header
+  +column(26, true)
+  background-attachment: fixed
+
+#logo
+  +column(4)
+  //+replace-text-with-dimensions('logo_orig.png')
+  width: 162px
+  position: relative
+  height: $logo-height
+  #white_star
+    position: absolute
+    +replace-text-with-dimensions('whitestar.png')
+    top: 48px
+    right: 28px
+    z-index: 1
+  #logo_image    
+    position: absolute
+    background: url('/images/logo_orig.png')
+    repeat: no-repeat
+    height: $logo-height
+    width: 162px
+    bottom: -15px
+    z-index: 0
+  #traduction
+    font-family: "Copperplate Gothic Light", sans-serif
+    font-size: 15.0px
+    line-height: 1.07em
+    letter-spacing: 4.50px 
+    color: white
+    width: 130px
+    position: absolute
+    bottom: 3px
+    left: 15px
+
+#subheader
+  +column(20, true)
+  +min-height($header-height)
+  position: relative
+  #bar
+    +replace-text-with-dimensions('yellowbar.png')
+    position: absolute
+    bottom: 4px
+  #phrase
+    +replace-text-with-dimensions('phrase.png')
+    position: absolute
+    bottom: 5px
+    left: 112px
+  #ribbon
+    +replace-text-with-dimensions('ribbon.png')
+    position: absolute
+    bottom: -7px
+    left: 584px
+  #english
+    position: absolute
+    bottom: 20px
+    right: -13px
+  #french
+    position: absolute
+    bottom: 20px
+    right: 20px
+
 
 //#logo
   //+column(6)
