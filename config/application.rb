@@ -42,7 +42,7 @@ module Deluxe
     config.filter_parameters += [:password]
 
     if Rails.env == "production"
-        config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-0000000-1")
+        config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-8138600-1")
     end
   end
 end
