@@ -36,26 +36,17 @@ header
   +append-bottom
 //  +showgrid 
 
-#wlogo
-  +column(24, true)
-  //+replace-text-with-dimensions("website_header.png")
-
-
 $logo-height: image-height('logo_orig.png')
 $header-height: $logo-height
 $bar-height: image-height('yellowbar.png')
 $subheader-height: $header-height - $bar-height
-@debug $logo-height
-@debug $blueprint-grid-columns
-@debug $header-height
 
 header
-  +column(26, true)
+  +column(25, true)
   background-attachment: fixed
 
 #logo
   +column(4)
-  //+replace-text-with-dimensions('logo_orig.png')
   width: 162px
   position: relative
   height: $logo-height
@@ -111,29 +102,6 @@ header
     bottom: 20px
     right: 20px
 
-
-//#logo
-  //+column(6)
-  //+replace-text("logo2.png")
-  //:width 153px
-  //:height 126px
-
-//#subheader
-  //border: 1px solid green
-  //+column(19,true)
-  //+min-height(126px)
-  //h2
-    //+column(13)
-    //+replace-text("phrase.png")
-    //:width 509px
-    //:height 36px
-    //margin-top: 41px
-  //#titflag
-    //border: 1px solid yellow
-  //#line
-    //border: 1px solid red
-    //margin-top: 41px
-
 #container
   +container
 
@@ -149,7 +117,7 @@ nav
       //width: 100px
       text-align: center
       a
-        font-family: Imprint MT Shadow
+        font-family: "Imprint MT Shadow"
         font-size: 16px
         opacity: 1.000000
         filter: alpha(opacity=100)
