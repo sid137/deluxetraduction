@@ -8,7 +8,8 @@
 @import blueprint/scaffolding
 
 // Generate the blueprint framework according to your configuration:
-
+@import "compass/support"
+@import "compass/css3/text-shadow"
 @import "compass/utilities/lists/horizontal-list"
 @import "compass/utilities/links"
 @import "compass/utilities/general/min"
@@ -214,6 +215,10 @@ nav
       text-align: justify            
   #title
     font-size: large
+    font-weight: 500
+    font-family: "Arial", "Arial Black"
+
+    +text-shadow($default-text-shadow-color,-1px,1px,3px)
   //.bienvenue
     //+replace-text("bienvenue.png",0,0)
     //width: 309px
