@@ -1,3 +1,6 @@
+public/en
+public/static
+public/wp*
 .bundle
 db/*.sqlite3
 log/*.log

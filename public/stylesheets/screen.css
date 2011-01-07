@@ -1538,10 +1538,8 @@ nav ul li {
 }
 /* line 119, ../../app/stylesheets/screen.sass */
 nav ul li a {
-  font-family: "Imprint MT Shadow";
+  font-family: "Times New Roman";
   font-size: 16px;
-  opacity: 1;
-  filter: alpha(opacity=100);
   text-decoration: none;
   color: #eec700;
 }
@@ -1562,7 +1560,7 @@ nav ul li a:active {
   color: #eec700;
 }
 
-/* line 127, ../../app/stylesheets/screen.sass */
+/* line 125, ../../app/stylesheets/screen.sass */
 #main {
   display: inline;
   float: left;
@@ -1581,7 +1579,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 135, ../../app/stylesheets/screen.sass */
+/* line 133, ../../app/stylesheets/screen.sass */
 #obelisk {
   display: inline;
   float: left;
@@ -1594,7 +1592,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 138, ../../app/stylesheets/screen.sass */
+/* line 136, ../../app/stylesheets/screen.sass */
 #arc {
   display: inline;
   float: left;
@@ -1607,7 +1605,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 141, ../../app/stylesheets/screen.sass */
+/* line 139, ../../app/stylesheets/screen.sass */
 #neuf {
   display: inline;
   float: left;
@@ -1620,7 +1618,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 144, ../../app/stylesheets/screen.sass */
+/* line 142, ../../app/stylesheets/screen.sass */
 #fountain {
   display: inline;
   float: left;
@@ -1633,7 +1631,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 147, ../../app/stylesheets/screen.sass */
+/* line 145, ../../app/stylesheets/screen.sass */
 #louvre {
   display: inline;
   float: left;
@@ -1646,7 +1644,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 150, ../../app/stylesheets/screen.sass */
+/* line 148, ../../app/stylesheets/screen.sass */
 #contact {
   display: inline;
   float: left;
@@ -1659,7 +1657,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 153, ../../app/stylesheets/screen.sass */
+/* line 151, ../../app/stylesheets/screen.sass */
 #news {
   display: inline;
   float: left;
@@ -1672,7 +1670,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 158, ../../app/stylesheets/screen.sass */
+/* line 156, ../../app/stylesheets/screen.sass */
 #container hr {
   background: #dddddd;
   color: #dddddd;
@@ -1687,7 +1685,7 @@ nav ul li a:active {
   visibility: hidden;
 }
 
-/* line 161, ../../app/stylesheets/screen.sass */
+/* line 159, ../../app/stylesheets/screen.sass */
 #content.index {
   display: inline;
   float: left;
@@ -1700,7 +1698,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 165, ../../app/stylesheets/screen.sass */
+/* line 163, ../../app/stylesheets/screen.sass */
 #content.savoir {
   display: inline;
   float: left;
@@ -1712,13 +1710,13 @@ nav ul li a:active {
 * html #content.savoir {
   overflow-x: hidden;
 }
-/* line 168, ../../app/stylesheets/screen.sass */
+/* line 166, ../../app/stylesheets/screen.sass */
 #content.savoir ul li {
   list-style-type: upper-roman;
   margin-top: 1.5em;
 }
 
-/* line 172, ../../app/stylesheets/screen.sass */
+/* line 170, ../../app/stylesheets/screen.sass */
 #content.langues {
   display: inline;
   float: left;
@@ -1730,7 +1728,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 175, ../../app/stylesheets/screen.sass */
+/* line 173, ../../app/stylesheets/screen.sass */
 #content.services {
   display: inline;
   float: left;
@@ -1742,11 +1740,11 @@ nav ul li a:active {
 * html #content.services {
   overflow-x: hidden;
 }
-/* line 178, ../../app/stylesheets/screen.sass */
+/* line 176, ../../app/stylesheets/screen.sass */
 #content.services ul li {
   margin-top: 0.25em;
 }
-/* line 180, ../../app/stylesheets/screen.sass */
+/* line 178, ../../app/stylesheets/screen.sass */
 #content.services ul li span {
   font-family: "Arial", sans-serif;
   font-weight: 700;
@@ -1754,7 +1752,7 @@ nav ul li a:active {
   line-height: 1.23em;
 }
 
-/* line 186, ../../app/stylesheets/screen.sass */
+/* line 184, ../../app/stylesheets/screen.sass */
 #content.news {
   display: inline;
   float: left;
@@ -1765,23 +1763,23 @@ nav ul li a:active {
 * html #content.news {
   overflow-x: hidden;
 }
-/* line 188, ../../app/stylesheets/screen.sass */
+/* line 186, ../../app/stylesheets/screen.sass */
 #content.news #news_content {
   padding: 4px;
   border: 1px solid #eec700;
 }
-/* line 191, ../../app/stylesheets/screen.sass */
+/* line 189, ../../app/stylesheets/screen.sass */
 #content.news #news_content p {
   font-size: x-small;
   font-family: "arial,helvetica,sans-serif";
 }
-/* line 194, ../../app/stylesheets/screen.sass */
+/* line 192, ../../app/stylesheets/screen.sass */
 #content.news #news_content p span {
   font-size: 10pt;
   font-family: "Arial Black";
 }
 
-/* line 199, ../../app/stylesheets/screen.sass */
+/* line 197, ../../app/stylesheets/screen.sass */
 #content p {
   font-family: "Arial", sans-serif;
   font-size: 13px;
@@ -1789,11 +1787,11 @@ nav ul li a:active {
   margin-bottom: 1.5em;
   text-align: justify;
 }
-/* line 206, ../../app/stylesheets/screen.sass */
+/* line 204, ../../app/stylesheets/screen.sass */
 #content p a {
   color: black;
 }
-/* line 208, ../../app/stylesheets/screen.sass */
+/* line 206, ../../app/stylesheets/screen.sass */
 #content ul {
   padding-left: 0px;
   list-style-position: inside;
@@ -1801,17 +1799,17 @@ nav ul li a:active {
   line-height: 1.13em;
   text-align: justify;
 }
-/* line 214, ../../app/stylesheets/screen.sass */
+/* line 212, ../../app/stylesheets/screen.sass */
 #content ul li {
   list-style-type: disc;
   text-align: justify;
 }
-/* line 217, ../../app/stylesheets/screen.sass */
+/* line 215, ../../app/stylesheets/screen.sass */
 #content #title {
   font-size: large;
 }
 
-/* line 226, ../../app/stylesheets/screen.sass */
+/* line 224, ../../app/stylesheets/screen.sass */
 #contact_form span, #address span {
   font-family: "Arial", sans-serif;
   font-weight: 700;
@@ -1820,21 +1818,21 @@ nav ul li a:active {
   color: #2c3651;
 }
 
-/* line 235, ../../app/stylesheets/screen.sass */
+/* line 233, ../../app/stylesheets/screen.sass */
 table tr td {
   vertical-align: top;
   padding: 0 0 0 0;
 }
-/* line 238, ../../app/stylesheets/screen.sass */
+/* line 236, ../../app/stylesheets/screen.sass */
 table tr td input, table tr td textarea {
   padding-left: 0;
 }
-/* line 240, ../../app/stylesheets/screen.sass */
+/* line 238, ../../app/stylesheets/screen.sass */
 table tr td label {
   font-weight: 400;
 }
 
-/* line 242, ../../app/stylesheets/screen.sass */
+/* line 240, ../../app/stylesheets/screen.sass */
 form {
   margin-bottom: 1.5em;
 }
@@ -1848,7 +1846,7 @@ form textarea {
   height: 86px;
 }
 
-/* line 247, ../../app/stylesheets/screen.sass */
+/* line 245, ../../app/stylesheets/screen.sass */
 #contact_form {
   display: inline;
   float: left;
@@ -1865,7 +1863,7 @@ form textarea {
 * html #contact_form {
   overflow-x: hidden;
 }
-/* line 255, ../../app/stylesheets/screen.sass */
+/* line 253, ../../app/stylesheets/screen.sass */
 #contact_form .hr.contact {
   text-indent: -119988px;
   overflow: hidden;
@@ -1878,7 +1876,7 @@ form textarea {
   margin-bottom: 1.5em;
 }
 
-/* line 259, ../../app/stylesheets/screen.sass */
+/* line 257, ../../app/stylesheets/screen.sass */
 #address {
   display: inline;
   float: left;
@@ -1890,7 +1888,7 @@ form textarea {
 * html #address {
   overflow-x: hidden;
 }
-/* line 262, ../../app/stylesheets/screen.sass */
+/* line 260, ../../app/stylesheets/screen.sass */
 #address .hr.address {
   text-indent: -119988px;
   overflow: hidden;
@@ -1902,11 +1900,11 @@ form textarea {
   height: 4px;
   margin-bottom: 1.5em;
 }
-/* line 265, ../../app/stylesheets/screen.sass */
+/* line 263, ../../app/stylesheets/screen.sass */
 #address p {
   margin: 0;
 }
-/* line 267, ../../app/stylesheets/screen.sass */
+/* line 265, ../../app/stylesheets/screen.sass */
 #address #street {
   margin-bottom: 1.5em;
   display: inline;
@@ -1918,11 +1916,11 @@ form textarea {
 * html #address #street {
   overflow-x: hidden;
 }
-/* line 270, ../../app/stylesheets/screen.sass */
+/* line 268, ../../app/stylesheets/screen.sass */
 #address #phone {
   margin-bottom: 1.5em;
 }
-/* line 273, ../../app/stylesheets/screen.sass */
+/* line 271, ../../app/stylesheets/screen.sass */
 #address #online a {
   color: black;
 }
@@ -1942,20 +1940,20 @@ form textarea {
 #address #online a:active {
   color: black;
 }
-/* line 275, ../../app/stylesheets/screen.sass */
+/* line 273, ../../app/stylesheets/screen.sass */
 #address p.title {
   font-family: "Arial", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 1.23em;
 }
-/* line 280, ../../app/stylesheets/screen.sass */
+/* line 278, ../../app/stylesheets/screen.sass */
 #address p.address {
   font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.23em;
 }
-/* line 284, ../../app/stylesheets/screen.sass */
+/* line 282, ../../app/stylesheets/screen.sass */
 #address p.email {
   font-family: "Arial", sans-serif;
   font-weight: 700;
@@ -1963,14 +1961,14 @@ form textarea {
   line-height: 1.23em;
   text-decoration: underline;
 }
-/* line 290, ../../app/stylesheets/screen.sass */
+/* line 288, ../../app/stylesheets/screen.sass */
 #address p.link {
   font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.85em;
 }
 
-/* line 295, ../../app/stylesheets/screen.sass */
+/* line 293, ../../app/stylesheets/screen.sass */
 #footer-links {
   display: inline;
   float: left;
@@ -1984,7 +1982,7 @@ form textarea {
 * html #footer-links {
   overflow-x: hidden;
 }
-/* line 300, ../../app/stylesheets/screen.sass */
+/* line 298, ../../app/stylesheets/screen.sass */
 #footer-links ul {
   margin: 0;
   padding: 0;
@@ -2012,12 +2010,12 @@ form textarea {
 #footer-links ul li:last-child, #footer-links ul li.last {
   padding-right: 0;
 }
-/* line 302, ../../app/stylesheets/screen.sass */
+/* line 300, ../../app/stylesheets/screen.sass */
 #footer-links ul span {
   color: white;
   padding-left: 0.6em;
 }
-/* line 305, ../../app/stylesheets/screen.sass */
+/* line 303, ../../app/stylesheets/screen.sass */
 #footer-links ul a {
   text-decoration: none;
   color: white;
@@ -2042,7 +2040,7 @@ form textarea {
   color: white;
 }
 
-/* line 312, ../../app/stylesheets/screen.sass */
+/* line 310, ../../app/stylesheets/screen.sass */
 #keywords {
   display: inline;
   float: left;
@@ -2059,7 +2057,7 @@ form textarea {
   overflow-x: hidden;
 }
 
-/* line 320, ../../app/stylesheets/screen.sass */
+/* line 318, ../../app/stylesheets/screen.sass */
 #mentions {
   padding-left: 20px;
   font-size: 13px;
