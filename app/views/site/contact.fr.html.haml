@@ -7,6 +7,8 @@
     %input(type="hidden" name="captcha_gateway" value="1")
     %table
       %tr
+        %td= label_tag 'No;' 
+      %tr
         %td= label_tag 'NOM', 'Nom:'
         %td= text_field_tag 'NOM', nil, :size => 29, :maxlength => 50
       %tr
@@ -26,6 +28,7 @@
   %p 
     N'oubliez pas de joindre le document à traduire. <br />
     La taille du fichier doit être inférieure à 10Mo, de préférence sous format word  pour une estimation plus rapide .
+  %p Pour l’interprétariat n’oubliez pas d’indiquer les dates, lieux, horaires, type de prestation,
 
 #address
   %span Siège
