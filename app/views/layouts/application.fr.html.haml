@@ -38,14 +38,19 @@
           %li= link_to "Accueil", index_path
           %li= link_to "Notre savoir-faire", savoir_path
           %li= link_to "Langues et spécialités", langues_path
-          %li= link_to "Services Annexes", services_path
+          %li= link_to "Permanence Téléphonique", permanence_path
+          %li= link_to "Secrétariat", secretariat_path
+          %li= link_to "Tarifs", tarifs_path
           %li= link_to "Contact", contact_path
-          %li= link_to "Actualités", news_path
+          %li= link_to "Références", references_path
       #main
         = yield
       %footer
         #footer-links
           %ul
+            %li<
+              = link_to "Conditions générales", conditions_path
+              <span> | </span>
             %li<
               = link_to "Mentions légales", mentions_path
               <span> | </span>

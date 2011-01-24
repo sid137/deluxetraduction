@@ -1,0 +1,61 @@
+#obelisk
+  = image_tag "obelisk.png"
+#arc
+  = image_tag "arc.png"
+#content.index
+  %p#title.permanence Permanence téléphonique
+  %p Nous vous proposons : 
+  %ul
+    %li La gestion de vos appels
+    %li L’attribution d’un numéro personnel
+    %li Le décroché au nom de votre société
+    %li Sourire et disponibilité, personnalisation de votre accueil selon vos instructions.
+    %li Gestion d’agenda
+    %li Possibilité de répondeur personnalisé
+    %li Possibilité de transfert d’appel
+    %li Aucun engagement dans la durée (Seul le mois entamé est dû si vous décidez d’arrêter. Pas de frais de résiliation)
+    %li Aucun frais caché : les forfaits incluent la mise en service, l’abonnement, la réservation de la ligne et le nombre d’appels traités indiqués. La plupart des sociétés ne vous dévoilent ces frais que plus tard, et vous dépassez facilement notre forfait minimum.
+    %li Prestation ponctuelle possible (vacances, maladie) 1er mois d’adaptation si vous ne connaissez pas exactement le volume d’appels nous pouvons partir sur un petit forfait et le faire évoluer si nécessaire le mois suivant.
+
+
+
+  %p Les champs marqués d'un * sont obligatoires
+  = form_tag do
+    %table
+      %tr
+        %td= label_tag 'Nom de la société* :'
+        %td= text_field_tag 'nom'
+      %tr
+        %td= label_tag 'Horaires de la permanence* :'
+        %td= text_field_tag 'horaires'
+      %tr
+        %td= label_tag 'Nom du responsable* :'
+        %td= text_field_tag 'responsable'
+      %tr
+        %td= label_tag 'Jours de permanence :'
+        %td= text_field_tag 'jours'
+      %tr
+        %td= label_tag 'Adresse complète :'
+        %td= text_field_tag 'addresse'
+      %tr
+        %td= label_tag 'Numéro de téléphone* :'
+        %td= text_field_tag 'telephone'
+      %tr
+        %td= label_tag "Nombre d'appels quotidiens *:"
+        %td= text_field_tag 'number'
+      %tr
+        %td= label_tag 'Mail* :'
+        %td= text_field_tag 'mail'
+
+    %p Avez-vous besoin de :
+    %table
+      %tr
+        %td= 'Prise de rendez-vous'
+        %td= check_box_tag 'rendez_vous'
+      %tr
+        %td= 'Prise de messages' 
+        %td= check_box_tag 'messages'
+      %tr
+        %td= 'Agenda en ligne'
+        %td= check_box_tag 'agenda'
+
