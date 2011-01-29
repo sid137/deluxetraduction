@@ -9,7 +9,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'haml'
 
-gem 'sitemap_generator'
 #group :production do
     #gem 'rack-google_analytics', :require => "rack/google_analytics"
 #end
