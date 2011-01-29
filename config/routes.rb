@@ -12,6 +12,7 @@ Deluxe::Application.routes.draw do
   match '(:lang)/secretariat'  =>  'site#secretariat', :as  => :secretariat
   match '(:lang)/tarifs'  =>  'site#tarifs', :as  => :tarifs
   match '(:lang)/references'  =>  'site#references', :as  => :references
+  match '(:lang)/refslist'  =>  'site#refslist', :as  => :refslist
   match '(:lang)/conditions_generales_de_vente'  =>  'site#conditions', :as  => :conditions
 
   
