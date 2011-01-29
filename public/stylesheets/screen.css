@@ -1333,7 +1333,7 @@ form.inline p {
   margin-bottom: 0;
 }
 
-/* line 29, ../../app/stylesheets/screen.sass */
+/* line 30, ../../app/stylesheets/screen.sass */
 header, nav, footer {
   display: inline;
   float: left;
@@ -1345,18 +1345,18 @@ header, nav, footer {
   overflow-x: hidden;
 }
 
-/* line 32, ../../app/stylesheets/screen.sass */
+/* line 33, ../../app/stylesheets/screen.sass */
 body {
   background-color: black;
 }
 
-/* line 35, ../../app/stylesheets/screen.sass */
+/* line 36, ../../app/stylesheets/screen.sass */
 header {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 
-/* line 45, ../../app/stylesheets/screen.sass */
+/* line 46, ../../app/stylesheets/screen.sass */
 header {
   display: inline;
   float: left;
@@ -1369,7 +1369,7 @@ header {
   overflow-x: hidden;
 }
 
-/* line 49, ../../app/stylesheets/screen.sass */
+/* line 50, ../../app/stylesheets/screen.sass */
 #logo {
   display: inline;
   float: left;
@@ -1383,7 +1383,7 @@ header {
 * html #logo {
   overflow-x: hidden;
 }
-/* line 54, ../../app/stylesheets/screen.sass */
+/* line 55, ../../app/stylesheets/screen.sass */
 #logo #white_star {
   position: absolute;
   text-indent: -119988px;
@@ -1398,7 +1398,7 @@ header {
   right: 28px;
   z-index: 1;
 }
-/* line 60, ../../app/stylesheets/screen.sass */
+/* line 61, ../../app/stylesheets/screen.sass */
 #logo #logo_image {
   position: absolute;
   background: url("/images/logo_orig.png");
@@ -1408,7 +1408,7 @@ header {
   bottom: -15px;
   z-index: 0;
 }
-/* line 68, ../../app/stylesheets/screen.sass */
+/* line 69, ../../app/stylesheets/screen.sass */
 #logo #traduction {
   font-family: "Copperplate Gothic Light", sans-serif;
   font-size: 15px;
@@ -1421,7 +1421,7 @@ header {
   left: 15px;
 }
 
-/* line 79, ../../app/stylesheets/screen.sass */
+/* line 80, ../../app/stylesheets/screen.sass */
 #subheader {
   display: inline;
   float: left;
@@ -1436,7 +1436,7 @@ header {
 * html #subheader {
   overflow-x: hidden;
 }
-/* line 83, ../../app/stylesheets/screen.sass */
+/* line 84, ../../app/stylesheets/screen.sass */
 #subheader #bar {
   text-indent: -119988px;
   overflow: hidden;
@@ -1449,7 +1449,7 @@ header {
   position: absolute;
   bottom: 4px;
 }
-/* line 87, ../../app/stylesheets/screen.sass */
+/* line 88, ../../app/stylesheets/screen.sass */
 #subheader #phrase {
   text-indent: -119988px;
   overflow: hidden;
@@ -1463,7 +1463,7 @@ header {
   bottom: 5px;
   left: 112px;
 }
-/* line 92, ../../app/stylesheets/screen.sass */
+/* line 93, ../../app/stylesheets/screen.sass */
 #subheader #ribbon {
   text-indent: -119988px;
   overflow: hidden;
@@ -1477,20 +1477,20 @@ header {
   bottom: -7px;
   left: 584px;
 }
-/* line 97, ../../app/stylesheets/screen.sass */
+/* line 98, ../../app/stylesheets/screen.sass */
 #subheader #english {
   position: absolute;
   bottom: 20px;
   right: -13px;
 }
-/* line 101, ../../app/stylesheets/screen.sass */
+/* line 102, ../../app/stylesheets/screen.sass */
 #subheader #french {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
 
-/* line 106, ../../app/stylesheets/screen.sass */
+/* line 107, ../../app/stylesheets/screen.sass */
 #container {
   width: 990px;
   margin: 0 auto;
@@ -1498,7 +1498,7 @@ header {
   *zoom: 1;
 }
 
-/* line 111, ../../app/stylesheets/screen.sass */
+/* line 112, ../../app/stylesheets/screen.sass */
 nav ul {
   margin: 0;
   padding: 0;
@@ -1527,12 +1527,12 @@ nav ul li:first-child, nav ul li.first {
 nav ul li:last-child, nav ul li.last {
   padding-right: 0;
 }
-/* line 115, ../../app/stylesheets/screen.sass */
+/* line 116, ../../app/stylesheets/screen.sass */
 nav ul li {
   margin-left: 10px;
   text-align: center;
 }
-/* line 120, ../../app/stylesheets/screen.sass */
+/* line 121, ../../app/stylesheets/screen.sass */
 nav ul li a {
   font-family: "Times New Roman";
   font-size: 16px;
@@ -1556,7 +1556,7 @@ nav ul li a:active {
   color: #eec700;
 }
 
-/* line 126, ../../app/stylesheets/screen.sass */
+/* line 127, ../../app/stylesheets/screen.sass */
 #main {
   display: inline;
   float: left;
@@ -1575,7 +1575,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 134, ../../app/stylesheets/screen.sass */
+/* line 135, ../../app/stylesheets/screen.sass */
 #obelisk {
   display: inline;
   float: left;
@@ -1588,7 +1588,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 137, ../../app/stylesheets/screen.sass */
+/* line 138, ../../app/stylesheets/screen.sass */
 #arc {
   display: inline;
   float: left;
@@ -1601,7 +1601,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 140, ../../app/stylesheets/screen.sass */
+/* line 141, ../../app/stylesheets/screen.sass */
 #neuf {
   display: inline;
   float: left;
@@ -1614,7 +1614,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 143, ../../app/stylesheets/screen.sass */
+/* line 144, ../../app/stylesheets/screen.sass */
 #fountain {
   display: inline;
   float: left;
@@ -1627,7 +1627,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 146, ../../app/stylesheets/screen.sass */
+/* line 147, ../../app/stylesheets/screen.sass */
 #louvre {
   display: inline;
   float: left;
@@ -1640,7 +1640,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 149, ../../app/stylesheets/screen.sass */
+/* line 150, ../../app/stylesheets/screen.sass */
 #contact {
   display: inline;
   float: left;
@@ -1653,7 +1653,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 152, ../../app/stylesheets/screen.sass */
+/* line 153, ../../app/stylesheets/screen.sass */
 #news {
   display: inline;
   float: left;
@@ -1666,7 +1666,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 157, ../../app/stylesheets/screen.sass */
+/* line 158, ../../app/stylesheets/screen.sass */
 #container hr {
   background: #dddddd;
   color: #dddddd;
@@ -1681,7 +1681,7 @@ nav ul li a:active {
   visibility: hidden;
 }
 
-/* line 160, ../../app/stylesheets/screen.sass */
+/* line 162, ../../app/stylesheets/screen.sass */
 #content.index {
   display: inline;
   float: left;
@@ -1693,8 +1693,114 @@ nav ul li a:active {
 * html #content.index {
   overflow-x: hidden;
 }
+/* line 165, ../../app/stylesheets/screen.sass */
+#content.index ul li {
+  margin-top: 0.5em;
+  padding-left: 1.6em;
+}
 
-/* line 164, ../../app/stylesheets/screen.sass */
+/* line 169, ../../app/stylesheets/screen.sass */
+#content.permanence {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.permanence {
+  overflow-x: hidden;
+}
+/* line 172, ../../app/stylesheets/screen.sass */
+#content.permanence ul li {
+  margin-top: 0.4em;
+  padding-left: 1.6em;
+}
+/* line 175, ../../app/stylesheets/screen.sass */
+#content.permanence p.form {
+  color: #666666;
+  font-weight: 300px;
+}
+/* line 179, ../../app/stylesheets/screen.sass */
+#content.permanence td:first-child {
+  width: 160px;
+}
+/* line 181, ../../app/stylesheets/screen.sass */
+#content.permanence td #submit {
+  position: relative;
+}
+/* line 183, ../../app/stylesheets/screen.sass */
+#content.permanence td #submit input {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+/* line 188, ../../app/stylesheets/screen.sass */
+#content.secretariat {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 550px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.secretariat {
+  overflow-x: hidden;
+}
+/* line 191, ../../app/stylesheets/screen.sass */
+#content.secretariat p.subtitle {
+  font-weight: 600;
+}
+/* line 193, ../../app/stylesheets/screen.sass */
+#content.secretariat ul {
+  margin-bottom: 5em;
+}
+/* line 195, ../../app/stylesheets/screen.sass */
+#content.secretariat ul li {
+  margin-top: 0.5em;
+  padding-left: 1.6em;
+}
+
+/* line 199, ../../app/stylesheets/screen.sass */
+#content.tarifs {
+  display: inline;
+  float: left;
+  margin-right: 0;
+  width: 590px;
+  padding-left: 40px;
+}
+/* line 138, ../../../../../.rvm/gems/ruby-1.9.2-p0/gems/compass-0.10.6/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+* html #content.tarifs {
+  overflow-x: hidden;
+}
+/* line 202, ../../app/stylesheets/screen.sass */
+#content.tarifs p.subtitle {
+  font-weight: 600;
+}
+/* line 204, ../../app/stylesheets/screen.sass */
+#content.tarifs ul li {
+  margin-top: 0.5em;
+  padding-left: 1.6em;
+}
+/* line 207, ../../app/stylesheets/screen.sass */
+#content.tarifs th, #content.tarifs td {
+  border: 1px solid black;
+}
+/* line 209, ../../app/stylesheets/screen.sass */
+#content.tarifs th {
+  text-align: center;
+}
+/* line 211, ../../app/stylesheets/screen.sass */
+#content.tarifs td {
+  padding: 1px 8px;
+}
+/* line 213, ../../app/stylesheets/screen.sass */
+#content.tarifs .quiet {
+  color: #666666;
+}
+
+/* line 216, ../../app/stylesheets/screen.sass */
 #content.savoir {
   display: inline;
   float: left;
@@ -1706,13 +1812,13 @@ nav ul li a:active {
 * html #content.savoir {
   overflow-x: hidden;
 }
-/* line 167, ../../app/stylesheets/screen.sass */
+/* line 219, ../../app/stylesheets/screen.sass */
 #content.savoir ul li {
   list-style-type: upper-roman;
   margin-top: 1.5em;
 }
 
-/* line 171, ../../app/stylesheets/screen.sass */
+/* line 223, ../../app/stylesheets/screen.sass */
 #content.langues {
   display: inline;
   float: left;
@@ -1724,7 +1830,7 @@ nav ul li a:active {
   overflow-x: hidden;
 }
 
-/* line 174, ../../app/stylesheets/screen.sass */
+/* line 226, ../../app/stylesheets/screen.sass */
 #content.services {
   display: inline;
   float: left;
@@ -1736,11 +1842,11 @@ nav ul li a:active {
 * html #content.services {
   overflow-x: hidden;
 }
-/* line 177, ../../app/stylesheets/screen.sass */
+/* line 229, ../../app/stylesheets/screen.sass */
 #content.services ul li {
   margin-top: 0.25em;
 }
-/* line 179, ../../app/stylesheets/screen.sass */
+/* line 231, ../../app/stylesheets/screen.sass */
 #content.services ul li span {
   font-family: "Arial", sans-serif;
   font-weight: 700;
@@ -1748,7 +1854,7 @@ nav ul li a:active {
   line-height: 1.23em;
 }
 
-/* line 185, ../../app/stylesheets/screen.sass */
+/* line 237, ../../app/stylesheets/screen.sass */
 #content.news {
   display: inline;
   float: left;
@@ -1759,23 +1865,37 @@ nav ul li a:active {
 * html #content.news {
   overflow-x: hidden;
 }
-/* line 187, ../../app/stylesheets/screen.sass */
+/* line 239, ../../app/stylesheets/screen.sass */
 #content.news #news_content {
   padding: 4px;
   border: 1px solid #eec700;
 }
-/* line 190, ../../app/stylesheets/screen.sass */
+/* line 242, ../../app/stylesheets/screen.sass */
 #content.news #news_content p {
   font-size: x-small;
   font-family: "arial,helvetica,sans-serif";
 }
-/* line 193, ../../app/stylesheets/screen.sass */
+/* line 245, ../../app/stylesheets/screen.sass */
 #content.news #news_content p span {
   font-size: 10pt;
   font-family: "Arial Black";
 }
 
-/* line 198, ../../app/stylesheets/screen.sass */
+/* line 250, ../../app/stylesheets/screen.sass */
+#content.conditions p#title {
+  text-align: center;
+}
+/* line 253, ../../app/stylesheets/screen.sass */
+#content.conditions li p:first-child {
+  font-weight: 700;
+}
+/* line 255, ../../app/stylesheets/screen.sass */
+#content.conditions ul p {
+  padding-left: 5em;
+  margin-top: 1em;
+}
+
+/* line 260, ../../app/stylesheets/screen.sass */
 #content p {
   font-family: "Arial", sans-serif;
   font-size: 13px;
@@ -1783,11 +1903,11 @@ nav ul li a:active {
   margin-bottom: 1.5em;
   text-align: justify;
 }
-/* line 204, ../../app/stylesheets/screen.sass */
+/* line 266, ../../app/stylesheets/screen.sass */
 #content p a {
   color: black;
 }
-/* line 206, ../../app/stylesheets/screen.sass */
+/* line 268, ../../app/stylesheets/screen.sass */
 #content ul {
   padding-left: 0px;
   list-style-position: inside;
@@ -1795,12 +1915,12 @@ nav ul li a:active {
   line-height: 1.13em;
   text-align: justify;
 }
-/* line 212, ../../app/stylesheets/screen.sass */
+/* line 274, ../../app/stylesheets/screen.sass */
 #content ul li {
   list-style-type: disc;
   text-align: justify;
 }
-/* line 215, ../../app/stylesheets/screen.sass */
+/* line 277, ../../app/stylesheets/screen.sass */
 #content #title {
   font-size: large;
   font-weight: 500;
@@ -1808,7 +1928,7 @@ nav ul li a:active {
   text-shadow: #aaaaaa -1px 1px 3px;
 }
 
-/* line 223, ../../app/stylesheets/screen.sass */
+/* line 285, ../../app/stylesheets/screen.sass */
 #contact_form span, #address span {
   font-family: "Arial", sans-serif;
   font-weight: 700;
@@ -1817,21 +1937,21 @@ nav ul li a:active {
   color: #2c3651;
 }
 
-/* line 232, ../../app/stylesheets/screen.sass */
+/* line 294, ../../app/stylesheets/screen.sass */
 table tr td {
   vertical-align: top;
   padding: 0 0 0 0;
 }
-/* line 235, ../../app/stylesheets/screen.sass */
+/* line 297, ../../app/stylesheets/screen.sass */
 table tr td input, table tr td textarea {
   padding-left: 0;
 }
-/* line 237, ../../app/stylesheets/screen.sass */
+/* line 299, ../../app/stylesheets/screen.sass */
 table tr td label {
   font-weight: 400;
 }
 
-/* line 239, ../../app/stylesheets/screen.sass */
+/* line 301, ../../app/stylesheets/screen.sass */
 form {
   margin-bottom: 1.5em;
 }
@@ -1845,7 +1965,7 @@ form textarea {
   height: 86px;
 }
 
-/* line 244, ../../app/stylesheets/screen.sass */
+/* line 306, ../../app/stylesheets/screen.sass */
 #contact_form {
   display: inline;
   float: left;
@@ -1862,7 +1982,7 @@ form textarea {
 * html #contact_form {
   overflow-x: hidden;
 }
-/* line 252, ../../app/stylesheets/screen.sass */
+/* line 314, ../../app/stylesheets/screen.sass */
 #contact_form .hr.contact {
   text-indent: -119988px;
   overflow: hidden;
@@ -1875,7 +1995,7 @@ form textarea {
   margin-bottom: 1.5em;
 }
 
-/* line 256, ../../app/stylesheets/screen.sass */
+/* line 318, ../../app/stylesheets/screen.sass */
 #address {
   display: inline;
   float: left;
@@ -1887,7 +2007,7 @@ form textarea {
 * html #address {
   overflow-x: hidden;
 }
-/* line 259, ../../app/stylesheets/screen.sass */
+/* line 321, ../../app/stylesheets/screen.sass */
 #address .hr.address {
   text-indent: -119988px;
   overflow: hidden;
@@ -1899,11 +2019,11 @@ form textarea {
   height: 4px;
   margin-bottom: 1.5em;
 }
-/* line 262, ../../app/stylesheets/screen.sass */
+/* line 324, ../../app/stylesheets/screen.sass */
 #address p {
   margin: 0;
 }
-/* line 264, ../../app/stylesheets/screen.sass */
+/* line 326, ../../app/stylesheets/screen.sass */
 #address #street {
   margin-bottom: 1.5em;
   display: inline;
@@ -1915,11 +2035,11 @@ form textarea {
 * html #address #street {
   overflow-x: hidden;
 }
-/* line 267, ../../app/stylesheets/screen.sass */
+/* line 329, ../../app/stylesheets/screen.sass */
 #address #phone {
   margin-bottom: 1.5em;
 }
-/* line 270, ../../app/stylesheets/screen.sass */
+/* line 332, ../../app/stylesheets/screen.sass */
 #address #online a {
   color: black;
 }
@@ -1939,20 +2059,20 @@ form textarea {
 #address #online a:active {
   color: black;
 }
-/* line 272, ../../app/stylesheets/screen.sass */
+/* line 334, ../../app/stylesheets/screen.sass */
 #address p.title {
   font-family: "Arial", sans-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 1.23em;
 }
-/* line 277, ../../app/stylesheets/screen.sass */
+/* line 339, ../../app/stylesheets/screen.sass */
 #address p.address {
   font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.23em;
 }
-/* line 281, ../../app/stylesheets/screen.sass */
+/* line 343, ../../app/stylesheets/screen.sass */
 #address p.email {
   font-family: "Arial", sans-serif;
   font-weight: 700;
@@ -1960,14 +2080,14 @@ form textarea {
   line-height: 1.23em;
   text-decoration: underline;
 }
-/* line 287, ../../app/stylesheets/screen.sass */
+/* line 349, ../../app/stylesheets/screen.sass */
 #address p.link {
   font-family: "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.85em;
 }
 
-/* line 292, ../../app/stylesheets/screen.sass */
+/* line 354, ../../app/stylesheets/screen.sass */
 #footer-links {
   display: inline;
   float: left;
@@ -1981,7 +2101,7 @@ form textarea {
 * html #footer-links {
   overflow-x: hidden;
 }
-/* line 297, ../../app/stylesheets/screen.sass */
+/* line 359, ../../app/stylesheets/screen.sass */
 #footer-links ul {
   margin: 0;
   padding: 0;
@@ -2009,12 +2129,12 @@ form textarea {
 #footer-links ul li:last-child, #footer-links ul li.last {
   padding-right: 0;
 }
-/* line 299, ../../app/stylesheets/screen.sass */
+/* line 361, ../../app/stylesheets/screen.sass */
 #footer-links ul span {
   color: white;
   padding-left: 0.6em;
 }
-/* line 302, ../../app/stylesheets/screen.sass */
+/* line 364, ../../app/stylesheets/screen.sass */
 #footer-links ul a {
   text-decoration: none;
   color: white;
@@ -2039,7 +2159,7 @@ form textarea {
   color: white;
 }
 
-/* line 309, ../../app/stylesheets/screen.sass */
+/* line 371, ../../app/stylesheets/screen.sass */
 #keywords {
   display: inline;
   float: left;
@@ -2056,7 +2176,7 @@ form textarea {
   overflow-x: hidden;
 }
 
-/* line 317, ../../app/stylesheets/screen.sass */
+/* line 379, ../../app/stylesheets/screen.sass */
 #mentions {
   padding-left: 20px;
   font-size: 13px;

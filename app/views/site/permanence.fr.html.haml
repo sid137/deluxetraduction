@@ -1,8 +1,6 @@
-#obelisk
-  = image_tag "obelisk.png"
-#arc
-  = image_tag "arc.png"
-#content.index
+#louvre
+  = image_tag "louvre.png"
+#content.permanence
   %p#title.permanence Permanence téléphonique
   %p Nous vous proposons : 
   %ul
@@ -15,11 +13,13 @@
     %li Possibilité de transfert d’appel
     %li Aucun engagement dans la durée (Seul le mois entamé est dû si vous décidez d’arrêter. Pas de frais de résiliation)
     %li Aucun frais caché : les forfaits incluent la mise en service, l’abonnement, la réservation de la ligne et le nombre d’appels traités indiqués. La plupart des sociétés ne vous dévoilent ces frais que plus tard, et vous dépassez facilement notre forfait minimum.
-    %li Prestation ponctuelle possible (vacances, maladie) 1er mois d’adaptation si vous ne connaissez pas exactement le volume d’appels nous pouvons partir sur un petit forfait et le faire évoluer si nécessaire le mois suivant.
+    %li Prestation ponctuelle possible (vacances, maladie) 
+  %br
+  %p 1er mois d’adaptation si vous ne connaissez pas exactement le volume d’appels nous pouvons commencer par un petit forfait et le faire évoluer si nécessaire le mois suivant.
 
 
-
-  %p Les champs marqués d'un * sont obligatoires
+  %br
+  %p.form <em>Les champs marqués d'un * sont obligatoires</em>
   = form_tag do
     %table
       %tr
@@ -50,12 +50,17 @@
     %p Avez-vous besoin de :
     %table
       %tr
-        %td= 'Prise de rendez-vous'
-        %td= check_box_tag 'rendez_vous'
-      %tr
-        %td= 'Prise de messages' 
-        %td= check_box_tag 'messages'
-      %tr
-        %td= 'Agenda en ligne'
-        %td= check_box_tag 'agenda'
+        %td
+          %table
+            %tr
+              %td= 'Prise de rendez-vous'
+              %td= check_box_tag 'rendez_vous'
+            %tr
+              %td= 'Prise de messages' 
+              %td= check_box_tag 'messages'
+            %tr
+              %td= 'Agenda en ligne'
+              %td= check_box_tag 'agenda'
+        %td
+          #submit= submit_tag "Envoyer Demande"
 
