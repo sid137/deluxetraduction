@@ -7,28 +7,31 @@
     %input(type="hidden" name="captcha_gateway" value="1")
     %table
       %tr
-        %td= label_tag 'No;' 
+        %td= label_tag 'Nom de la société' 
+        %td= text_field_tag 'societe'
       %tr
-        %td= label_tag 'NOM', 'Nom:'
+        %td= label_tag 'NOM', 'Nom du contact'
         %td= text_field_tag 'NOM', nil, :size => 29, :maxlength => 50
       %tr
         %td= label_tag 'E-MAIL', 'Adresse e-mail :'
         %td= text_field_tag 'E-MAIL', nil, :size => 29, :maxlength => 100
       %tr
-        %td= label_tag 'COMMENTAIRE', 'Commentaires :'
-        %td= text_area_tag 'COMMENTAIRE', nil, :rows => 5, :cols => 22
-      %tr
-        %td
+        %td= label_tag 'Document à joindre pour devis'
         %td= file_field_tag 'fichier_2', :size => 15
+      %tr
+        %td= label_tag 'Address postale pour devis nominatif' 
+        %td= text_field_tag 'addresse'
+      %tr
+        %td= label_tag 'COMMENTAIRE', 'Commentaires (Précisez délai, langue(s), format):'
+        %td= text_area_tag 'COMMENTAIRE', nil, :rows => 5, :cols => 22
       %tr
         %td
         %td= submit_tag 'Envoyer'
 
   %p Pour toute demande de devis ou d’information merci de nous contacter en utilisant le formulaire ci-dessus.
-  %p 
-    N'oubliez pas de joindre le document à traduire. <br />
-    La taille du fichier doit être inférieure à 10Mo, de préférence sous format word  pour une estimation plus rapide .
-  %p Pour l’interprétariat n’oubliez pas d’indiquer les dates, lieux, horaires, type de prestation,
+  %p.strong N'oubliez pas de joindre le document à traduire. 
+  %p La taille du fichier doit être inférieure à 10Mo, de préférence sous format word  pour une estimation plus rapide .
+  %p.strong Pour l’interprétariat n’oubliez pas d’indiquer les dates, lieux, horaires, type de prestation,
 
 #address
   %span Siège

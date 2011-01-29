@@ -304,16 +304,22 @@ form
 
 
 #contact_form
-  +column(8)
-  +prepend(1)
+  +column(9)
+  //+prepend(1)
+  table td
+    padding: 0.2em 0
+    &:first-child
+      padding-top: 0.4em
   text-align: justify
   font-family: "Arial", sans-serif
-  font-weight: 700
   font-size: 12.0px 
   line-height: 1.25em 
   .hr.contact
     +replace-text-with-dimensions('contact_separator.png')
     +append-bottom
+  .strong
+    font-weight: 700
+  +append-bottom(5em)
 
 #address
   +column(8,true)
