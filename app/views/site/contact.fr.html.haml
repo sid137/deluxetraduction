@@ -4,7 +4,7 @@
   %span Contactez-nous
   .hr.contact
     /= form_tag 'http://www.serifwebresources.com/form.php?uid=651fb134170ae508a22c6b41f2593de2', :multipart => true do
-  = form_tag contact_email_path, :multipart => true do
+  = form_tag contact_email_path, :multipart => true, :id => 'form' do
     %input(type="hidden" name="captcha_gateway" value="1")
     %table
       %tr
@@ -30,7 +30,16 @@
       %tr
         %td
         %td= submit_tag 'Envoyer'
+      %tr
+        %td
+    #spinner 
 
+  :javascript
+      $('#form').submit(function(){
+        $('#spinner').empty().html('Chargement de votre document... #{image_tag 'spinning-wait.gif'} ');
+        $('input[type=submit]', this).attr('disabled', 'disabled');
+      })
+    
   %p Pour toute demande de devis ou d’information merci de nous contacter en utilisant le formulaire ci-dessus.
   %p.strong N'oubliez pas de joindre le document à traduire. 
   %p La taille du fichier doit être inférieure à 10Mo, de préférence sous format word  pour une estimation plus rapide .
