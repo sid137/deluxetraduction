@@ -36,7 +36,7 @@
 
   :javascript
       $('#form').submit(function(){
-        $('#spinner').empty().html('Chargement de votre document... #{image_tag 'spinning-wait.gif'} ');
+        $('#spinner').html('Chargement de votre document...  <img src="http://www.deluxetraduction.com/images/spinning-wait.gif" /> ');
         $('input[type=submit]', this).attr('disabled', 'disabled');
       })
     
