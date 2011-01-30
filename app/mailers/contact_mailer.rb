@@ -3,16 +3,11 @@ class ContactMailer < ActionMailer::Base
 
 
   def contact_email(info)
-    @name = info[:name] 
-    @company = info[:company]
-    @email = info[:email]
-    @file = info[:file]
-    @address = info[:address]
-    @comments = info[:comments]
-    headers["Reply-To"] = info[:email]
     upload = info[:file]
+    info.delete :file
+    @info = info
     attachments[upload.original_filename]  =  upload.read if upload
-    mail(:subject => "Deluxe Traduction Contact Form")
+    mail(:subject => "Deluxe Traduction Contact Form", :reply_to  => info[:email])
   end
 end
 

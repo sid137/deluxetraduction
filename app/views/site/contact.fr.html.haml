@@ -36,7 +36,7 @@
 
   :javascript
       $('#form').submit(function(){
-        $('#spinner').html('Chargement de votre document...  <img src="http://deluxetraduction-staging.heroku.com/images/spinning-wait.gif" /> ');
+        $('#spinner').html('Chargement de votre document...  <br><img src="http://deluxetraduction-staging.heroku.com/images/spinning-wait.gif" />');
         $('input[type=submit]', this).attr('disabled', 'disabled');
       })
     

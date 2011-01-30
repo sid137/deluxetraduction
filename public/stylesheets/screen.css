@@ -2099,6 +2099,13 @@ form textarea {
 }
 
 /* line 360, ../../app/stylesheets/screen.sass */
+.success, #spinner {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+
+/* line 365, ../../app/stylesheets/screen.sass */
 #footer-links {
   display: inline;
   float: left;
@@ -2112,7 +2119,7 @@ form textarea {
 * html #footer-links {
   overflow-x: hidden;
 }
-/* line 365, ../../app/stylesheets/screen.sass */
+/* line 370, ../../app/stylesheets/screen.sass */
 #footer-links ul {
   margin: 0;
   padding: 0;
@@ -2140,12 +2147,12 @@ form textarea {
 #footer-links ul li:last-child, #footer-links ul li.last {
   padding-right: 0;
 }
-/* line 367, ../../app/stylesheets/screen.sass */
+/* line 372, ../../app/stylesheets/screen.sass */
 #footer-links ul span {
   color: white;
   padding-left: 0.6em;
 }
-/* line 370, ../../app/stylesheets/screen.sass */
+/* line 375, ../../app/stylesheets/screen.sass */
 #footer-links ul a {
   text-decoration: none;
   color: white;
@@ -2170,7 +2177,7 @@ form textarea {
   color: white;
 }
 
-/* line 377, ../../app/stylesheets/screen.sass */
+/* line 382, ../../app/stylesheets/screen.sass */
 #keywords {
   display: inline;
   float: left;
@@ -2187,7 +2194,7 @@ form textarea {
   overflow-x: hidden;
 }
 
-/* line 385, ../../app/stylesheets/screen.sass */
+/* line 390, ../../app/stylesheets/screen.sass */
 #mentions {
   padding-left: 20px;
   font-size: 13px;
