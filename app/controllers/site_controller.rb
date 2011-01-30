@@ -9,7 +9,7 @@ class SiteController < ApplicationController
 
   def send_contact_email
     info = params[:contact
-    header["Reply-to"] = info[:email]
+    headers["Reply-to"] = info[:email]
     ContactMailer.contact_email(info).deliver
   end 
 end
