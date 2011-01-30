@@ -3,27 +3,30 @@
 #contact_form
   %span Contactez-nous
   .hr.contact
-  = form_tag 'http://www.serifwebresources.com/form.php?uid=651fb134170ae508a22c6b41f2593de2', :multipart => true do
+    /= form_tag 'http://www.serifwebresources.com/form.php?uid=651fb134170ae508a22c6b41f2593de2', :multipart => true do
+  = form_tag contact_email_path, :multipart => true do
     %input(type="hidden" name="captcha_gateway" value="1")
     %table
       %tr
-        %td= label_tag 'Nom de la société' 
-        %td= text_field_tag 'societe'
+        %td= label_tag 'contact_company', 'Nom de la société' 
+        %td= text_field_tag 'contact[company]', 'My Fake Company', :size => 29
       %tr
-        %td= label_tag 'NOM', 'Nom du contact'
-        %td= text_field_tag 'NOM', nil, :size => 29, :maxlength => 50
+        %td= label_tag 'contact_name', 'Nom du contact'
+        %td= text_field_tag 'contact[name]', 'Sidney Burks', :size => 29, :maxlength => 50
       %tr
-        %td= label_tag 'E-MAIL', 'Adresse e-mail :'
-        %td= text_field_tag 'E-MAIL', nil, :size => 29, :maxlength => 100
+        %td= label_tag 'contact_email', 'Adresse e-mail :'
+        %td= text_field_tag 'contact[email]', 'sid137@gmail.com', :size => 29, :maxlength => 100
       %tr
-        %td= label_tag 'Document à joindre pour devis'
-        %td= file_field_tag 'fichier_2', :size => 15
+        %td= label_tag 'contact_file', 'Document à joindre pour devis'
+        %td= file_field_tag 'contact[file]', :size => 15
       %tr
-        %td= label_tag 'Address postale pour devis nominatif' 
-        %td= text_field_tag 'addresse'
+        %td= label_tag 'contact_address', 'Address postale pour devis nominatif' 
+        %td= text_field_tag 'contact[address]', '5 Villa de l\'Astrolabe', :size => 29
       %tr
-        %td= label_tag 'COMMENTAIRE', 'Commentaires (Précisez délai, langue(s), format):'
-        %td= text_area_tag 'COMMENTAIRE', nil, :rows => 5, :cols => 22
+        %td
+          = label_tag 'contact_comments', 'Commentaires'
+          %br (Précisez délai, langue(s), format):
+        %td= text_area_tag 'contact[comments]', 'These are some test comments that I wanted to write', :rows => 5, :cols => 22
       %tr
         %td
         %td= submit_tag 'Envoyer'

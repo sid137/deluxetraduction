@@ -7,4 +7,7 @@ class SiteController < ApplicationController
     I18n.locale = params[:lang]
   end 
 
+  def send_contact_email
+    ContactMailer.contact_email(params[:contact]).deliver
+  end 
 end

@@ -14,6 +14,7 @@ Deluxe::Application.routes.draw do
   match '(:lang)/references'  =>  'site#references', :as  => :references
   match '(:lang)/refslist'  =>  'site#refslist', :as  => :refslist
   match '(:lang)/conditions_generales_de_vente'  =>  'site#conditions', :as  => :conditions
+  match '(:lang)/contact_email'  =>  'site#send_contact_email', :as  => :contact_email
 
   
   # The priority is based upon order of creation:
