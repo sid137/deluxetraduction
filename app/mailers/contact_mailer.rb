@@ -9,6 +9,7 @@ class ContactMailer < ActionMailer::Base
     @file = info[:file]
     @address = info[:address]
     @comments = info[:comments]
+    headers["Reply-To"] = info[:email]
     mail(:subject => "Deluxe Traduction Contact Form")
   end
 end
