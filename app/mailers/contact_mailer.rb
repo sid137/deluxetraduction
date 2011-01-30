@@ -10,7 +10,8 @@ class ContactMailer < ActionMailer::Base
     @address = info[:address]
     @comments = info[:comments]
     headers["Reply-To"] = info[:email]
-    attachments["test.pdf"] = info[:file]
+    upload = info[:file]
+    attachments[upload.original_filename]  =  upload.read
     mail(:subject => "Deluxe Traduction Contact Form")
   end
 end
