@@ -3,29 +3,46 @@
 #contact_form
   %span Contact Us
   .hr.contact
-  = form_tag 'http://www.serifwebresources.com/form.php?uid=651fb134170ae508a22c6b41f2593de2', :multipart => true do
+  = form_tag contact_email_path, :multipart => true, :id => 'form' do
     %input(type="hidden" name="captcha_gateway" value="1")
     %table
       %tr
-        %td= label_tag 'NOM', 'Name:'
-        %td= text_field_tag 'NOM', nil, :size => 29, :maxlength => 50
+        %td= label_tag 'contact_company', 'Company Name:' 
+        %td= text_field_tag 'contact[company]',nil, :size => 29
       %tr
-        %td= label_tag 'E-MAIL', 'Email Address :'
-        %td= text_field_tag 'E-MAIL', nil, :size => 29, :maxlength => 100
+        %td= label_tag 'contact_name', 'Contact name:'
+        %td= text_field_tag 'contact[name]',nil, :size => 29, :maxlength => 50
       %tr
-        %td= label_tag 'COMMENTAIRE', 'Comments :'
-        %td= text_area_tag 'COMMENTAIRE', nil, :rows => 5, :cols => 22
+        %td= label_tag 'contact_email', 'Email Address:'
+        %td= text_field_tag 'contact[email]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_file', 'Document to translate'
+        %td= file_field_tag 'contact[file]', :size => 15
+      %tr
+        %td= label_tag 'contact_address', 'Postal address for quotation' 
+        %td= text_field_tag 'contact[address]',nil, :size => 29
       %tr
         %td
-        %td= file_field_tag 'fichier_2', :size => 15
+          = label_tag 'contact_comments', 'Comments'
+          %br (Specify the desired turnaround time, target languages, and format):
+        %td= text_area_tag 'contact[comments]',nil, :rows => 5, :cols => 22
       %tr
         %td
-        %td= submit_tag 'Send'
+        %td= submit_tag 'Envoyer'
+      %tr
+        %td
+    #spinner 
 
+  :javascript
+      $('#form').submit(function(){
+        $('#spinner').html('Uploading your document...  <br><img src="http://deluxetraduction-staging.heroku.com/images/spinning-wait.gif" />');
+        $('input[type=submit]', this).attr('disabled', 'disabled');
+      })
+    
   %p To request a quotation or any additional information, please contact us using the form above. 
-  %p 
-    Don't forget to attach the document to be translated. <br />
-    The maximum file size is 10 MB, preferably in Word format for a more rapid response .
+  %p.strong Don't forget to attach the document to be translated. 
+  %p The maximum file size is 10 MB, preferably in Word format for a more rapid response .
+  %p.strong For interpretation services, please indicate the necessary dates, places, hours, and type of service.
 
 #address
   %span Offices

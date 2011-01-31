@@ -1,0 +1,71 @@
+#louvre
+  = image_tag "louvre.png"
+#content.permanence
+  %p#title.permanence Permanence téléphonique
+  %p Nous vous proposons : 
+  %ul
+    %li La gestion de vos appels
+    %li L’attribution d’un numéro personnel
+    %li Le décroché au nom de votre société
+    %li Sourire et disponibilité, personnalisation de votre accueil selon vos instructions.
+    %li Gestion d’agenda
+    %li Possibilité de répondeur personnalisé
+    %li Possibilité de transfert d’appel
+    %li Aucun engagement dans la durée (Seul le mois entamé est dû si vous décidez d’arrêter. Pas de frais de résiliation)
+    %li Aucun frais caché : les forfaits incluent la mise en service, l’abonnement, la réservation de la ligne et le nombre d’appels traités indiqués. La plupart des sociétés ne vous dévoilent ces frais que plus tard, et vous dépassez facilement notre forfait minimum.
+    %li Prestation ponctuelle possible (vacances, maladie) 
+  %br
+  %p 1er mois d’adaptation si vous ne connaissez pas exactement le volume d’appels nous pouvons commencer par un petit forfait et le faire évoluer si nécessaire le mois suivant.
+
+
+  %br
+  %p.form <em>Les champs marqués d'un * sont obligatoires</em>
+  = form_tag permanence_email_path, :multipart => true, :id => "form" do
+    %table
+      %tr
+        %td= label_tag 'contact_company', 'Nom de la société*' 
+        %td= text_field_tag 'contact[company]', nil, :size => 29
+      %tr
+        %td= label_tag 'contact_hours', 'Horaires de la permanence*'
+        %td= text_field_tag 'contact[hours]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_name', 'Nom du responsable*'
+        %td= text_field_tag 'contact[name]',nil, :size => 29, :maxlength => 50
+      %tr
+        %td= label_tag 'contact_days', 'Jours de permanence :'
+        %td= text_field_tag 'contact[days]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_address', 'Adresse complète' 
+        %td= text_field_tag 'contact[address]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_telephone', 'Numéro de téléphone* :'
+        %td= text_field_tag 'contact[telephone]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_calls', "Nombre d'appels quotidiens"
+        %td= text_field_tag 'contact[calls]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_email', 'Adresse e-mail :'
+        %td= text_field_tag 'contact[email]',nil, :size => 29, :maxlength => 100
+
+    %p Avez-vous besoin de :
+    %table
+      %tr
+        %td
+          %table
+            %tr
+              %td= 'Prise de rendez-vous'
+              %td= check_box_tag 'contact[rendez_vous]'
+            %tr
+              %td= 'Prise de messages' 
+              %td= check_box_tag 'contact[messages]'
+            %tr
+              %td= 'Agenda en ligne'
+              %td= check_box_tag 'contact[agenda]'
+        %td
+          #submit= submit_tag "Envoyer Demande"
+
+  :javascript
+      $('#form').submit(function(){
+        $('input[type=submit]', this).attr('disabled', 'disabled');
+      })
+

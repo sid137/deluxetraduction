@@ -3,11 +3,19 @@ Deluxe::Application.routes.draw do
   root :to => redirect("/#{I18n.locale}")
   match ':lang'  => 'site#index', :as  => :index
   match '(:lang)/savoir'  => 'site#savoir', :as  => :savoir
-  match '(:lang)/langues'  =>  'site#langues', :as  =>  :langues
+  match '(:lang)/langues_de_traduction'  =>  'site#langues', :as  =>  :langues
   match '(:lang)/services'  => 'site#service', :as  => :services
   match '(:lang)/contact'  =>  'site#contact', :as  => :contact
   match '(:lang)/news'  =>  'site#news', :as  =>  :news
   match '(:lang)/mention'  =>  'site#mention', :as  => :mentions
+  match '(:lang)/permanence_telephonique'  =>  'site#permanence', :as  => :permanence
+  match '(:lang)/secretariat'  =>  'site#secretariat', :as  => :secretariat
+  match '(:lang)/tarifs'  =>  'site#tarifs', :as  => :tarifs
+  match '(:lang)/references'  =>  'site#references', :as  => :references
+  match '(:lang)/refslist'  =>  'site#refslist', :as  => :refslist
+  match '(:lang)/conditions_generales_de_vente'  =>  'site#conditions', :as  => :conditions
+  match '(:lang)/contact_email'  =>  'site#send_contact_email', :as  => :contact_email
+  match '(:lang)/permanence_email'  =>  'site#send_permanence_email', :as  => :permanence_email
 
   
   # The priority is based upon order of creation:

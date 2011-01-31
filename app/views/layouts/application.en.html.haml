@@ -5,7 +5,7 @@
 
     %title Deluxe Traduction
 
-    /= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
+    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"
     = stylesheet_link_tag "screen", :media => "screen, projection"
     = stylesheet_link_tag "print", :media => "print"
 
@@ -39,8 +39,10 @@
           %li= link_to "Our Expertise", savoir_path
           %li= link_to "Languages and Specialties", langues_path
           %li= link_to "Additional Services", services_path
+          %li= link_to "Prices", tarifs_path
           %li= link_to "Contact Us", contact_path
-          %li= link_to "News", news_path
+          %li= link_to "References", references_path
+
       #main
         = yield
       %footer

@@ -6,6 +6,7 @@
 @import blueprint
 // Import the non-default scaffolding module.
 @import blueprint/scaffolding
+@import "blueprint/typography"
 
 // Generate the blueprint framework according to your configuration:
 @import "compass/support"
@@ -107,10 +108,9 @@ header
   +container
 
 nav 
-  +prepend(3)
+  +prepend(1.8)
   ul
     +horizontal-list(15px)
-    //+inline-block-list(9px)
     +append-bottom(0.5em)
     li
       margin-left: 10px
@@ -122,6 +122,9 @@ nav
         font-size: 16px
         text-decoration: none
         +link-colors($nav_gold, white, $nav_gold, $nav_gold, $nav_gold)
+
+nav.french
+  +prepend(0.4)
 
 #main
   +column(25, true)
@@ -157,9 +160,60 @@ nav
   hr
     +colspacer
 
+  
 #content.index
   +column(12, true)
   +prepend(2)  
+  ul li
+    +prepend-top(0.5em)
+    padding-left: 1.6em
+
+#content.permanence
+  +column(14, true)
+  +prepend(1)  
+  ul li
+    +prepend-top(0.4em)
+    padding-left: 1.6em
+  p.form
+    +quiet
+    font-weight: 300px
+  td
+    &:first-child
+      width: 160px
+    #submit
+      position: relative
+      input
+        position: absolute
+        top: 15px
+        left: 70px
+
+#content.secretariat
+  +column(14, true)
+  +prepend(1)  
+  p.subtitle
+    font-weight: 600
+  ul 
+    +append-bottom(5em)
+    li
+      +prepend-top(0.5em)
+      padding-left: 1.6em
+  
+#content.tarifs
+  +column(15, true)
+  +prepend(1)  
+  p.subtitle
+    font-weight: 600
+  ul li
+    +prepend-top(0.5em)
+    padding-left: 1.6em
+  th, td
+    border: 1px solid black
+  th
+    text-align: center
+  td
+    padding: 1px 8px
+  .quiet
+    +quiet
 
 #content.savoir
   +column(17, true)
@@ -193,6 +247,16 @@ nav
       span
         font-size: 10pt
         font-family: "Arial Black"
+
+#content.conditions
+  p#title
+    text-align: center
+  li p
+    &:first-child
+      font-weight: 700
+  ul p
+    padding-left: 5em
+    margin-top: 1em
 
 #content 
   p
@@ -242,16 +306,22 @@ form
 
 
 #contact_form
-  +column(8)
-  +prepend(1)
+  +column(9)
+  //+prepend(1)
+  table td
+    padding: 0.2em 0
+    &:first-child
+      padding-top: 0.4em
   text-align: justify
   font-family: "Arial", sans-serif
-  font-weight: 700
   font-size: 12.0px 
   line-height: 1.25em 
   .hr.contact
     +replace-text-with-dimensions('contact_separator.png')
     +append-bottom
+  .strong
+    font-weight: 700
+  +append-bottom(5em)
 
 #address
   +column(8,true)
@@ -289,9 +359,17 @@ form
     font-size: 13.0px 
     line-height: 1.85em
 
+.success, #spinner
+  text-align: center
+  margin: auto
+  width: 300px
+
+p.alert
+  color: red
+
 #footer-links
-  +column(10, true)  
-  +prepend(9)
+  +column(13, true)  
+  +prepend(9.3)
   +prepend-top
   +append-bottom
   ul
@@ -305,6 +383,9 @@ form
       font-family: "Arial", sans-serif
       font-size: 11.0px
       line-height: 1.27em
+
+#footer-links.french
+  +prepend(7.5)
 
 #keywords
   +column(25, true)
