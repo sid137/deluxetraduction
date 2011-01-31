@@ -1,5 +1,6 @@
 %p Mail sent from DexluxeTraduction.com contact page
-
+%br
+%br
 %P Nom de la Societey: #{@info[:company]}
 %p Horaires de Permanence : #{@info[:hours]}
 %p Nom du Responsable #{@info[:name]}
@@ -10,7 +11,7 @@
 %p Adresse email: #{@info[:email]}
 
 - if @info[:rendez_vous]
-  %p Prise de rendez-vous: ou
+  %p Prise de rendez-vous: oui
 
 - if @info[:messages]
   %p Prise de messsages: oui

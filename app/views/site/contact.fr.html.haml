@@ -9,24 +9,24 @@
     %table
       %tr
         %td= label_tag 'contact_company', 'Nom de la société' 
-        %td= text_field_tag 'contact[company]', 'My Fake Company', :size => 29
+        %td= text_field_tag 'contact[company]',nil, :size => 29
       %tr
         %td= label_tag 'contact_name', 'Nom du contact'
-        %td= text_field_tag 'contact[name]', 'Sidney Burks', :size => 29, :maxlength => 50
+        %td= text_field_tag 'contact[name]',nil, :size => 29, :maxlength => 50
       %tr
         %td= label_tag 'contact_email', 'Adresse e-mail :'
-        %td= text_field_tag 'contact[email]', 'sid137@gmail.com', :size => 29, :maxlength => 100
+        %td= text_field_tag 'contact[email]',nil, :size => 29, :maxlength => 100
       %tr
         %td= label_tag 'contact_file', 'Document à joindre pour devis'
         %td= file_field_tag 'contact[file]', :size => 15
       %tr
         %td= label_tag 'contact_address', 'Address postale pour devis nominatif' 
-        %td= text_field_tag 'contact[address]', '5 Villa de l\'Astrolabe', :size => 29
+        %td= text_field_tag 'contact[address]',nil, :size => 29
       %tr
         %td
           = label_tag 'contact_comments', 'Commentaires'
           %br (Précisez délai, langue(s), format):
-        %td= text_area_tag 'contact[comments]', 'These are some test comments that I wanted to write', :rows => 5, :cols => 22
+        %td= text_area_tag 'contact[comments]',nil, :rows => 5, :cols => 22
       %tr
         %td
         %td= submit_tag 'Envoyer'
