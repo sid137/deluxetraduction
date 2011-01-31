@@ -1562,7 +1562,7 @@ nav ul li a:active {
 
 /* line 126, ../../app/stylesheets/screen.sass */
 nav.french {
-  padding-left: 0;
+  padding-left: 8px;
 }
 
 /* line 129, ../../app/stylesheets/screen.sass */
