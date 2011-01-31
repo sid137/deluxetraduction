@@ -1506,7 +1506,7 @@ header {
 
 /* line 119, ../../app/stylesheets/screen.sass */
 nav {
-  padding-left: 64px;
+  padding-left: 68px;
 }
 /* line 121, ../../app/stylesheets/screen.sass */
 nav ul {
@@ -1567,7 +1567,7 @@ nav ul li a:active {
 
 /* line 135, ../../app/stylesheets/screen.sass */
 nav.french {
-  padding-left: 8px;
+  padding-left: 16px;
 }
 
 /* line 138, ../../app/stylesheets/screen.sass */
@@ -2151,7 +2151,7 @@ p.alert {
   font-family: "Arial", sans-serif;
   line-height: 1.03em;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 11px;
   font-style: normal;
 }
 
