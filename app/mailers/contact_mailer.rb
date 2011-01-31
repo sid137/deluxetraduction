@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default :from => "Deluxe Traduction Website <contact@deluxetraduction.com>", :to => 'sid137@gmail.com'
+  default :from => "Deluxe Traduction Website <contact@deluxetraduction.com>", :to => 'contact@deluxetraduction.com'
 
 
   def contact_email(info)
