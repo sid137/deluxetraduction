@@ -108,10 +108,9 @@ header
   +container
 
 nav 
-  //+prepend(1)
+  +prepend(1)
   ul
     +horizontal-list(15px)
-    //+inline-block-list(9px)
     +append-bottom(0.5em)
     li
       margin-left: 10px
@@ -123,6 +122,9 @@ nav
         font-size: 16px
         text-decoration: none
         +link-colors($nav_gold, white, $nav_gold, $nav_gold, $nav_gold)
+
+nav.french
+  padding-left: 0
 
 #main
   +column(25, true)

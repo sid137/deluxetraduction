@@ -33,7 +33,7 @@
           #english= link_to image_tag('en.png'), url_for(:lang => 'en')
           #bar
       %hr
-      %nav
+      %nav.french
         %ul
           %li= link_to "Accueil", index_path
           %li= link_to "Notre savoir-faire", savoir_path
@@ -45,7 +45,7 @@
           %li= link_to "Références", references_path
       #main
         = yield
-      %footer
+      %footer.french
         #footer-links
           %ul
             %li<
