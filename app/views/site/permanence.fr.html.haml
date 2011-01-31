@@ -20,32 +20,32 @@
 
   %br
   %p.form <em>Les champs marqués d'un * sont obligatoires</em>
-  = form_tag do
+  = form_tag permanence_email_path, :multipart => true, :id => "form" do
     %table
       %tr
-        %td= label_tag 'Nom de la société* :'
-        %td= text_field_tag 'nom'
+        %td= label_tag 'contact_company', 'Nom de la société*' 
+        %td= text_field_tag 'contact[company]', 'My Fake Company', :size => 29
       %tr
-        %td= label_tag 'Horaires de la permanence* :'
-        %td= text_field_tag 'horaires'
+        %td= label_tag 'contact_hours', 'Horaires de la permanence* :'
+        %td= text_field_tag 'contact[hours]', '7am - 9pm', :size => 29
       %tr
-        %td= label_tag 'Nom du responsable* :'
-        %td= text_field_tag 'responsable'
+        %td= label_tag 'contact_name', 'Nom du responsable*'
+        %td= text_field_tag 'contact[name]', 'Sidney Burks', :size => 29, :maxlength => 50
       %tr
-        %td= label_tag 'Jours de permanence :'
-        %td= text_field_tag 'jours'
+        %td= label_tag 'contact_days', 'Jours de permanence :'
+        %td= text_field_tag 'contact[days]', 'jours', :size => 29
       %tr
-        %td= label_tag 'Adresse complète :'
-        %td= text_field_tag 'addresse'
+        %td= label_tag 'contact_address', 'Address complète' 
+        %td= text_field_tag 'contact[address]', '5 Villa de l\'Astrolabe', :size => 29
       %tr
-        %td= label_tag 'Numéro de téléphone* :'
-        %td= text_field_tag 'telephone'
+        %td= label_tag 'contact_telephone', 'Numéro de téléphone* :'
+        %td= text_field_tag 'contact[telephone]', '01 45 41 57 00', :size => 29
       %tr
-        %td= label_tag "Nombre d'appels quotidiens *:"
-        %td= text_field_tag 'number'
+        %td= label_tag 'contact_calls', "Nombre d'appels quotidiens *:"
+        %td= text_field_tag 'contact[calls]', '50', :size => 29
       %tr
-        %td= label_tag 'Mail* :'
-        %td= text_field_tag 'mail'
+        %td= label_tag 'contact_email', 'Adresse e-mail :'
+        %td= text_field_tag 'contact[email]', 'sid137@gmail.com', :size => 29, :maxlength => 100
 
     %p Avez-vous besoin de :
     %table
@@ -54,13 +54,18 @@
           %table
             %tr
               %td= 'Prise de rendez-vous'
-              %td= check_box_tag 'rendez_vous'
+              %td= check_box_tag 'contact[rendez_vous]'
             %tr
               %td= 'Prise de messages' 
-              %td= check_box_tag 'messages'
+              %td= check_box_tag 'contact[messages]'
             %tr
               %td= 'Agenda en ligne'
-              %td= check_box_tag 'agenda'
+              %td= check_box_tag 'contact[agenda]'
         %td
           #submit= submit_tag "Envoyer Demande"
+
+  :javascript
+      $('#form').submit(function(){
+        $('input[type=submit]', this).attr('disabled', 'disabled');
+      })
 
