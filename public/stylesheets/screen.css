@@ -1506,7 +1506,7 @@ header {
 
 /* line 119, ../../app/stylesheets/screen.sass */
 nav {
-  padding-left: 56px;
+  padding-left: 64px;
 }
 /* line 121, ../../app/stylesheets/screen.sass */
 nav ul {
@@ -1567,7 +1567,7 @@ nav ul li a:active {
 
 /* line 135, ../../app/stylesheets/screen.sass */
 nav.french {
-  padding-left: 0px;
+  padding-left: 8px;
 }
 
 /* line 138, ../../app/stylesheets/screen.sass */
@@ -2149,14 +2149,13 @@ p.alert {
 /* line 389, ../../app/stylesheets/screen.sass */
 #content.emailing em.quiet p {
   font-family: "Arial", sans-serif;
-  font-size: 0px;
   line-height: 1.03em;
   font-weight: 400;
-  font-size: 6px;
+  font-size: 9px;
   font-style: normal;
 }
 
-/* line 397, ../../app/stylesheets/screen.sass */
+/* line 396, ../../app/stylesheets/screen.sass */
 #footer-links {
   display: inline;
   float: left;
@@ -2170,7 +2169,7 @@ p.alert {
 * html #footer-links {
   overflow-x: hidden;
 }
-/* line 402, ../../app/stylesheets/screen.sass */
+/* line 401, ../../app/stylesheets/screen.sass */
 #footer-links ul {
   margin: 0;
   padding: 0;
@@ -2198,12 +2197,12 @@ p.alert {
 #footer-links ul li:last-child, #footer-links ul li.last {
   padding-right: 0;
 }
-/* line 404, ../../app/stylesheets/screen.sass */
+/* line 403, ../../app/stylesheets/screen.sass */
 #footer-links ul span {
   color: white;
   padding-left: 0.6em;
 }
-/* line 407, ../../app/stylesheets/screen.sass */
+/* line 406, ../../app/stylesheets/screen.sass */
 #footer-links ul a {
   text-decoration: none;
   color: white;
@@ -2228,12 +2227,12 @@ p.alert {
   color: white;
 }
 
-/* line 414, ../../app/stylesheets/screen.sass */
+/* line 413, ../../app/stylesheets/screen.sass */
 #footer-links.french {
   padding-left: 300px;
 }
 
-/* line 417, ../../app/stylesheets/screen.sass */
+/* line 416, ../../app/stylesheets/screen.sass */
 #keywords {
   display: inline;
   float: left;
@@ -2250,7 +2249,7 @@ p.alert {
   overflow-x: hidden;
 }
 
-/* line 425, ../../app/stylesheets/screen.sass */
+/* line 424, ../../app/stylesheets/screen.sass */
 #mentions {
   padding-left: 20px;
   font-size: 13px;
