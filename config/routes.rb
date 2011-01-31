@@ -16,6 +16,7 @@ Deluxe::Application.routes.draw do
   match '(:lang)/conditions_generales_de_vente'  =>  'site#conditions', :as  => :conditions
   match '(:lang)/contact_email'  =>  'site#send_contact_email', :as  => :contact_email
   match '(:lang)/permanence_email'  =>  'site#send_permanence_email', :as  => :permanence_email
+  match '(:lang)/email_marketing'  =>  'site#emailing', :as  => :emailing
 
   
   # The priority is based upon order of creation:

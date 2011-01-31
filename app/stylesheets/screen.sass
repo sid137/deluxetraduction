@@ -117,12 +117,12 @@ header
   +container
 
 nav 
-  +prepend(1.8)
+  +prepend(1.4)
   ul
     +horizontal-list(15px)
     +append-bottom(0.5em)
     li
-      margin-left: 10px
+      //margin-left: 10px
       //+column(3)
       //width: 100px
       text-align: center
@@ -133,7 +133,7 @@ nav
         +link-colors($nav_gold, white, $nav_gold, $nav_gold, $nav_gold)
 
 nav.french
-  +prepend(0.4)
+  +prepend(0)
 
 #main
   +column(25, true)
@@ -245,6 +245,8 @@ nav.french
       font-size: 13.0px
       line-height: 1.23em
 
+  
+
 #content.news
   +column(15,true)
   #news_content
@@ -291,6 +293,14 @@ nav.french
     font-family: "Arial", "Arial Black"
     +text-shadow($default-text-shadow-color,-1px,1px,3px)
 
+#content.emailing
+  +column(16,true)
+  +prepend(1)
+  ul 
+    +prepend-top(2em)
+    li 
+      +prepend-top(0.45em)
+      padding-left: 120px
 
 #contact_form, #address
   span
@@ -375,6 +385,14 @@ form
 
 p.alert
   color: red
+
+#content.emailing em.quiet p
+  font-family: "Arial", sans-serif
+  font-size: 0px
+  line-height: 1.03em
+  font-weight: 400
+  font-size: 6px
+  font-style: normal
 
 #footer-links
   +column(13, true)  
