@@ -5,4 +5,8 @@ class ApplicationController < ActionController::Base
     logger.debug "default_url_options is passed options: #{options.inspect} \n"
     {:lang  =>  I18n.locale}
   end 
+
+  def cache_long
+    response['Cache-Control'] = "public, max-age=#{60 * 60 * 24}" unless development?
+  end
 end
