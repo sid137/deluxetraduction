@@ -58,3 +58,9 @@
   #online
     %p.email #{mail_to 'contact@deluxetraduction.com', nil, :encoding => 'javascript'}
     %p.link #{link_to 'www.deluxetraduction.com/fr', index_url}
+
+#apply
+  %span Traducteurs
+  .hr.apply
+  %p
+    Pour envoyer votre candidature, merci de remplir le formulaire sur #{link_to "cette page", translator_url}

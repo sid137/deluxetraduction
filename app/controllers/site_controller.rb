@@ -17,4 +17,9 @@ class SiteController < ApplicationController
     ContactMailer.permanence_email(info).deliver
     render 'send_contact_email'
   end 
+
+  def send_translator_email
+    info = params[:contact]
+    ContactMailer.contact_email(info).deliver
+  end 
 end

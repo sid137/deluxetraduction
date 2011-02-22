@@ -304,7 +304,7 @@ nav.french
       +prepend-top(0.45em)
       padding-left: 120px
 
-#contact_form, #address
+#contact_form, #address, #apply
   span
     font-family: "Arial", sans-serif
     font-weight: 700 
@@ -343,6 +343,16 @@ form
   .strong
     font-weight: 700
   +append-bottom(5em)
+
+#apply
+  p a
+    +link-colors(black, black, black, black, black)
+  +column(8,true)
+  +prepend(0.5)
+  +prepend-top(5em)
+  .hr.apply
+    +replace-text-with-dimensions('address_separator.png')
+    +append-bottom
 
 #address
   +column(8,true)
