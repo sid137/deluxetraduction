@@ -31,7 +31,7 @@
         %td= text_field_tag 'contact[firstname]',nil, :size => 29
       %tr
         %td= label_tag 'contact_civility', 'Prefix' 
-        %td= select_tag 'contact[civility]', options_for_select(['M.', 'Ms.', 'Mrs.'], 'Ms.')
+        %td= select_tag 'contact[civility]', options_for_select(['Mr.', 'Ms.', 'Mrs.'], 'Ms.')
       %tr
         %td= label_tag 'contact_birthdate', 'Date of birth' 
         %td= text_field_tag 'contact[birthdate]',nil, :size => 29
