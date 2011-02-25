@@ -1,16 +1,20 @@
 #obelisk
   = image_tag "obelisk.png"
 #content.index
+  %br
   %p Cher Traducteurs,
   %p 
+  %br
   %p Les candidatures ne respectant pas les critères suivants seront éliminées :
   %ul
     %li Votre langue cible n’est pas votre langue maternelle (indiquer clairement votre langue maternelle et votre pays de résidence)
     %li Vous refusez de nous indiquer vos références.
     %li Vous refusez nos conditions, tarifs, ou délais.
     %li Vous n’êtes pas traducteur professionnel indépendant, enregistré au Registre du Commerce de votre pays de résidence
+  %br
 
   %p Merci de remplir entièrement le formulaire ci-dessous et de joindre votre CV.
+  %br
 
   = form_tag translator_email_path, :multipart => true, :id => 'form' do
     %table
@@ -87,12 +91,9 @@
         %td= label_tag 'contact_specialties', 'Spécialité'
         %td= text_field_tag 'contact[specialties]',nil, :size => 29, :maxlength => 100
       %tr
-        %td
-          = label_tag 'contact_comments', 'Commentaires'
+        %td= label_tag 'contact_comments', 'Commentaires'
         %td= text_area_tag 'contact[comments]',nil, :rows => 5, :cols => 22
       %tr
         %td
         %td= submit_tag 'Envoyer candidature'
-      %tr
-        %td
     #spinner 
