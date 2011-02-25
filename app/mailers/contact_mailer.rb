@@ -15,7 +15,7 @@ class ContactMailer < ActionMailer::Base
     info.delete :file
     @info = info
     attachments[upload.original_filename]  =  upload.read if upload
-    mail(:subject => "Application Translator", :reply_to => info[:email], :to => 'sid137@gmail.com')
+    mail(:subject => "Application Translator", :reply_to => info[:email])
   end
 
   def permanence_email(info)
