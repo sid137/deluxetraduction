@@ -31,7 +31,7 @@
         %td= text_field_tag 'contact[firstname]',nil, :size => 29
       %tr
         %td= label_tag 'contact_civility', 'Prefix' 
-        %td= select_tag 'contact[civility]', options_for_select(['M.', 'Mme.', 'Mlle.'], 'Mme.')
+        %td= select_tag 'contact[civility]', options_for_select(['M.', 'Ms.', 'Mrs.'], 'Ms.')
       %tr
         %td= label_tag 'contact_birthdate', 'Date of birth' 
         %td= text_field_tag 'contact[birthdate]',nil, :size => 29
@@ -70,7 +70,7 @@
         %td= select_tag 'contact[status]', options_for_select(["freelance", "entreprise"])
       %tr
         %td= label_tag 'contact_certified', 'Legally Certified'
-        %td= select_tag 'contact[certified]', options_for_select(["non", "oui"])
+        %td= select_tag 'contact[certified]', options_for_select(["no", "yes"])
       %tr
         %td= label_tag 'contact_start', "Date of Beginning of Activity"
         %td= text_field_tag 'contact[start]',nil, :size => 29, :maxlength => 100
