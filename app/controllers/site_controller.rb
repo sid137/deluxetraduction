@@ -10,6 +10,7 @@ class SiteController < ApplicationController
   def send_contact_email
     info = params[:contact]
     ContactMailer.contact_email(info).deliver
+    render 'send_contact_email'
   end 
 
   def send_permanence_email
@@ -20,6 +21,7 @@ class SiteController < ApplicationController
 
   def send_translator_email
     info = params[:contact]
-    ContactMailer.contact_email(info).deliver
+    ContactMailer.translator_email(info).deliver
+    render 'send_contact_email'
   end 
 end

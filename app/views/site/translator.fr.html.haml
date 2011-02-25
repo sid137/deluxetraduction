@@ -1,55 +1,98 @@
 #obelisk
   = image_tag "obelisk.png"
-#arc
-  = image_tag "arc.png"
 #content.index
-  %p#title.bienvenue Bienvenue chez Deluxe Traduction
+  %p Cher Traducteurs,
   %p 
+  %p Les candidatures ne respectant pas les critères suivants seront éliminées :
+  %ul
+    %li Votre langue cible n’est pas votre langue maternelle (indiquer clairement votre langue maternelle et votre pays de résidence)
+    %li Vous refusez de nous indiquer vos références.
+    %li Vous refusez nos conditions, tarifs, ou délais.
+    %li Vous n’êtes pas traducteur professionnel indépendant, enregistré au Registre du Commerce de votre pays de résidence
+
+  %p Merci de remplir entièrement le formulaire ci-dessous et de joindre votre CV.
+
   = form_tag translator_email_path, :multipart => true, :id => 'form' do
     %table
       %tr
-        %td= label_tag 'contact_company', 'Nom de la société' 
-        %td= text_field_tag 'contact[company]',nil, :size => 29
-      %tr
-        %td= label_tag 'contact_name', 'Nom du contact'
-        %td= text_field_tag 'contact[name]',nil, :size => 29, :maxlength => 50
-      %tr
-        %td= label_tag 'contact_email', 'Adresse e-mail :'
-        %td= text_field_tag 'contact[email]',nil, :size => 29, :maxlength => 100
-      %tr
-        %td= label_tag 'contact_file', 'Document à joindre pour devis'
+        %td= label_tag 'contact_file', 'CV'
         %td= file_field_tag 'contact[file]', :size => 15
       %tr
-        %td= label_tag 'contact_address', 'Adresse postale pour devis nominatif' 
-        %td= text_field_tag 'contact[address]',nil, :size => 29
+        %td= label_tag 'contact_country', 'Pays' 
+        %td= text_field_tag 'contact[country]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_lastname', 'Nom' 
+        %td= text_field_tag 'contact[lastname]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_firstname', 'Prénom' 
+        %td= text_field_tag 'contact[firstname]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_civility', 'Civilité' 
+        %td= select_tag 'contact[civility]', options_for_select(['M.', 'Mme.', 'Mlle.'], 'Mme.')
+      %tr
+        %td= label_tag 'contact_birthdate', 'Date de naissance' 
+        %td= text_field_tag 'contact[birthdate]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_email', 'Email'
+        %td= text_field_tag 'contact[email]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_telephone', 'Téléphone'
+        %td= text_field_tag 'contact[telephone]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_mobile', 'Mobile'
+        %td= text_field_tag 'contact[mobile]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_fax', 'Fax'
+        %td= text_field_tag 'contact[fax]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_address', 'Adresse'
+        %td= text_field_tag 'contact[address]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_city', 'Ville'
+        %td= text_field_tag 'contact[city]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_zip', 'Code Postal'
+        %td= text_field_tag 'contact[zip]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_siret', 'Siret'
+        %td= text_field_tag 'contact[siret]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_ursaf', 'Ursaf'
+        %td= text_field_tag 'contact[ursaf]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_tva', 'N° TVA Intra-communataire'
+        %td= text_field_tag 'contact[tva]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_status', 'Statut Légal'
+        %td= select_tag 'contact[status]', options_for_select(["freelance", "entreprise"])
+      %tr
+        %td= label_tag 'contact_certified', 'Assermenté'
+        %td= select_tag 'contact[certified]', options_for_select(["non", "oui"])
+      %tr
+        %td= label_tag 'contact_start', "Début d'activité"
+        %td= text_field_tag 'contact[start]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_native', 'Langue maternelle'
+        %td= text_field_tag 'contact[native]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_secondary', 'Deuxième langue'
+        %td= text_field_tag 'contact[secondary]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_rate', 'Tarif traduction'
+        %td  #{text_field_tag 'contact[rate_trans]',nil, :size => 4, :maxlength => 10} € / mot
+      %tr
+        %td= label_tag 'contact_rate', 'Tarif interprétariat'
+        %td  #{text_field_tag 'contact[rate_inter]',nil, :size => 4, :maxlength => 10} € / jour
+      %tr
+        %td= label_tag 'contact_specialties', 'Spécialité'
+        %td= text_field_tag 'contact[specialties]',nil, :size => 29, :maxlength => 100
       %tr
         %td
           = label_tag 'contact_comments', 'Commentaires'
-          %br (Précisez délai, langue(s), format):
         %td= text_area_tag 'contact[comments]',nil, :rows => 5, :cols => 22
       %tr
         %td
-        %td= submit_tag 'Envoyer'
+        %td= submit_tag 'Envoyer candidature'
       %tr
         %td
     #spinner 
-  %p
-    Nous vous proposons de vous aider à communiquer efficacement
-    dans de nombreux domaines et dans toutes les langues. Nous
-    effectuons des traductions de qualité, grâce à notre
-    sélection de traducteurs diplômés, expérimentés et
-    traduisant tous exclusivement vers leur langue maternelle.
-  %p
-    Notre équipe est composée de traducteurs et correcteurs
-    spécialisés, mais également de graphistes et assistantes
-    bureautiques, ce qui nous permet de vous offrir également
-    des prestations d'assistance administratives,
-    retranscription audio et vidéo en plusieurs langues,
-    réalisation de sites internet et logos, et permanence
-    téléphonique.  #{link_to "En savoir plus...", services_url}
-  %p Nous vous proposons : 
-  %ul
-    %li 1 devis sous 24h
-    %li 1 travail rapide, efficace, contrôlé par des professionnels 
-    %li 1 traducteur de langue maternelle, spécialisé dans votre domaine
-    %li 1 garantie de confidentialité
