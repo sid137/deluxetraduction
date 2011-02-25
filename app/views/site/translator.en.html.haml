@@ -1,0 +1,98 @@
+#obelisk
+  = image_tag "obelisk.png"
+#content.index
+  %br
+  %p Dear Translators,
+  %p 
+  %br
+  %p The applications not respecting the following criterion will be eliminated :
+  %ul
+    %li Votre langue cible n’est pas votre langue maternelle (clearly indicate your native language and your country of residence)
+    %li You refuse to provide us with references.
+    %li You refuse our conditions, rates, or time constraints.
+    %li you are not a professional translator, either independant, or registered with the Commerce Authority of your country of residence
+
+  %p Please fill out the entire form below, and attach your CV.
+  %br
+
+  = form_tag translator_email_path, :multipart => true, :id => 'form' do
+    %table
+      %tr
+        %td= label_tag 'contact_file', 'CV'
+        %td= file_field_tag 'contact[file]', :size => 15
+      %tr
+        %td= label_tag 'contact_country', 'Country' 
+        %td= text_field_tag 'contact[country]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_lastname', 'Last Name' 
+        %td= text_field_tag 'contact[lastname]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_firstname', 'First Name' 
+        %td= text_field_tag 'contact[firstname]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_civility', 'Prefix' 
+        %td= select_tag 'contact[civility]', options_for_select(['M.', 'Mme.', 'Mlle.'], 'Mme.')
+      %tr
+        %td= label_tag 'contact_birthdate', 'Date of birth' 
+        %td= text_field_tag 'contact[birthdate]',nil, :size => 29
+      %tr
+        %td= label_tag 'contact_email', 'Email'
+        %td= text_field_tag 'contact[email]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_telephone', 'Telephone'
+        %td= text_field_tag 'contact[telephone]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_mobile', 'Mobile'
+        %td= text_field_tag 'contact[mobile]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_fax', 'Fax'
+        %td= text_field_tag 'contact[fax]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_address', 'Address'
+        %td= text_field_tag 'contact[address]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_city', 'City'
+        %td= text_field_tag 'contact[city]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_zip', 'Postal Code'
+        %td= text_field_tag 'contact[zip]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_siret', 'Siret'
+        %td= text_field_tag 'contact[siret]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_ursaf', 'Registration Number'
+        %td= text_field_tag 'contact[ursaf]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_tva', 'N° TVA Intra-communataire'
+        %td= text_field_tag 'contact[tva]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_status', 'Legal Status'
+        %td= select_tag 'contact[status]', options_for_select(["freelance", "entreprise"])
+      %tr
+        %td= label_tag 'contact_certified', 'Legally Certified'
+        %td= select_tag 'contact[certified]', options_for_select(["non", "oui"])
+      %tr
+        %td= label_tag 'contact_start', "Date of Beginning of Activity"
+        %td= text_field_tag 'contact[start]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_native', 'Native Language'
+        %td= text_field_tag 'contact[native]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_secondary', 'Secondary Languages'
+        %td= text_field_tag 'contact[secondary]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_rate', 'Translation rates'
+        %td  #{text_field_tag 'contact[rate_trans]',nil, :size => 4, :maxlength => 10} € / mot
+      %tr
+        %td= label_tag 'contact_rate', 'Interpretation Rates'
+        %td  #{text_field_tag 'contact[rate_inter]',nil, :size => 4, :maxlength => 10} € / jour
+      %tr
+        %td= label_tag 'contact_specialties', 'Specialties'
+        %td= text_field_tag 'contact[specialties]',nil, :size => 29, :maxlength => 100
+      %tr
+        %td= label_tag 'contact_comments', 'Comments'
+        %td= text_area_tag 'contact[comments]',nil, :rows => 5, :cols => 22
+      %tr
+        %td
+        %td= submit_tag 'Send Application'
+    #spinner 
