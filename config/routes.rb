@@ -19,6 +19,7 @@ Deluxe::Application.routes.draw do
   match '(:lang)/translator_email'  =>  'site#send_translator_email', :as  => :translator_email
   match '(:lang)/email_marketing'  =>  'site#emailing', :as  => :emailing
   match '(:lang)/translators_apply'  =>  'site#translator', :as  => :translator
+  match '(:lang)/email1'  =>  'site#email1', :as  => :email1
 
   
   # The priority is based upon order of creation:
