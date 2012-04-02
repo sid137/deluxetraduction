@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ApplicationController	controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ContactMailer	mailers/contact_mailer.rb	/^class ContactMailer < ActionMailer::Base$/;"	c
+SiteController	controllers/site_controller.rb	/^class SiteController < ApplicationController$/;"	c
+SiteHelper	helpers/site_helper.rb	/^module SiteHelper$/;"	m
+cache_long	controllers/application_controller.rb	/^  def cache_long$/;"	f	class:ApplicationController
+contact_email	mailers/contact_mailer.rb	/^  def contact_email(info)$/;"	f	class:ContactMailer
+default_url_options	controllers/application_controller.rb	/^  def default_url_options(options={})$/;"	f	class:ApplicationController
+permanence_email	mailers/contact_mailer.rb	/^  def permanence_email(info)$/;"	f	class:ContactMailer
+send_contact_email	controllers/site_controller.rb	/^  def send_contact_email$/;"	f	class:SiteController
+send_permanence_email	controllers/site_controller.rb	/^  def send_permanence_email$/;"	f	class:SiteController
+send_translator_email	controllers/site_controller.rb	/^  def send_translator_email$/;"	f	class:SiteController
+set_locale	controllers/site_controller.rb	/^  def set_locale$/;"	f	class:SiteController
+title	helpers/application_helper.rb	/^  def title$/;"	f	class:ApplicationHelper
+translator_email	mailers/contact_mailer.rb	/^  def translator_email(info)$/;"	f	class:ContactMailer
