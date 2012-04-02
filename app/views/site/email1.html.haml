@@ -1,26 +1,48 @@
-.email-containter(style='padding: 15px;')
-  .images(style='text-align:center;')
-    = image_tag 'snow.jpg'
-    = image_tag 'sausage.jpg', :width => 320
+!!! 
+%html(lang='fr')
+  %head
+    %meta(charset='utf-8')
+  
+    %title #{title}
 
-  .text-content(style='font-size:18px; margin:20px 10px;')
-    %p Si vous pouvez vous permettre un petit malentendu, continuez avec la traduction automatique. Si vous tenez à votre image de marque, contactez <b>DELUXE TRADUCTION.</b>
+    = stylesheet_link_tag "screen", :media => "screen, projection"
 
-    %p Nous proposons des traductions dans <b> toutes les combinaisons de langues,</b> afin de répondre au mieux à vos besoins. Toutes nos traductions sont relues pour garantir une qualité sans failles, et nos contrats comportent tous une clause de confidentialité. Nous pouvons également fournir des traductions assermentées sur demande. 
+  %body
+    #container
+      %header
+        #logo
+          #white_star
+          #logo_image
+          #traduction TRADUCTION
+        #subheader
+          #phrase
+          #ribbon
+          #bar
+      %hr
+      #main
+        .email-containter(style='padding: 15px;')
+          .images(style='text-align:center;')
+            = image_tag 'snow.jpg'
+            = image_tag 'sausage.jpg', :width => 320
 
-    %p Nous proposons également des prestations de <b>permanence téléphonique</b> sans engagement, secrétariat, rédaction, transcription audio et création de sites internet. 
+          .text-content(style='font-size:18px; margin:20px 10px;')
+            %p Si vous pouvez vous permettre un petit malentendu, continuez avec la traduction automatique. Si vous tenez à votre image de marque, contactez <b>DELUXE TRADUCTION.</b>
 
-    %p Pour plus d’informations, vous pouvez visiter notre site :
-    .url(style='text-align:center;margin-bottom: 20px;')
-      = link_to 'www.deluxetraduction.com', 'http://www.deluxetraduction.com/fr'
+            %p Nous proposons des traductions dans <b> toutes les combinaisons de langues,</b> afin de répondre au mieux à vos besoins. Toutes nos traductions sont relues pour garantir une qualité sans failles, et nos contrats comportent tous une clause de confidentialité. Nous pouvons également fournir des traductions assermentées sur demande. 
 
-    %p Nous restons à votre disposition pour tous renseignements à l’adresse <b>(merci d’envoyer les documents à traduire par e-mail pour un devis en indiquant la combinaison de langues)</b> 
+            %p Nous proposons également des prestations de <b>permanence téléphonique</b> sans engagement, secrétariat, rédaction, transcription audio et création de sites internet. 
 
-    %div.contact(style='text-align: center; ')
-      = mail_to 'contact@deluxetraduction.com' 
-      %br ou par téléphone au <b>09-70-20-08-30</b>
+            %p Pour plus d’informations, vous pouvez visiter notre site :
+            .url(style='text-align:center;margin-bottom: 20px;')
+              = link_to 'www.deluxetraduction.com', 'http://www.deluxetraduction.com/fr'
 
-    .address
-      %b
-        Deluxe Traduction <br />
-        75015 Paris
+            %p Nous restons à votre disposition pour tous renseignements à l’adresse <b>(merci d’envoyer les documents à traduire par e-mail pour un devis en indiquant la combinaison de langues)</b> 
+
+            %div.contact(style='text-align: center; ')
+              = mail_to 'contact@deluxetraduction.com' 
+              %br ou par téléphone au <b>09-70-20-08-30</b>
+
+            .address
+              %b
+                Deluxe Traduction <br />
+                75015 Paris

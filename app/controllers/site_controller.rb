@@ -1,7 +1,7 @@
 class SiteController < ApplicationController
 
   before_filter :set_locale
-  layout "application", :except => :refslist
+  layout "application", :except => [:refslist, :email1]
 
   def set_locale
     I18n.locale = params[:lang]
