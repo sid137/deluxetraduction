@@ -1,28 +1,25 @@
 .email-containter(style='padding: 15px;')
-  %p Bonjour,                                                                                                 
+  .images
+    = image_tag 'snow.jpg'
+    = image_tag 'sausage.jpg', :width => 320
 
-  %p 
-    Deluxe Traduction propose des traductions dans <b>toutes les combinaisons de langues,</b> afin de répondre au mieux à vos besoins. Toutes nos traductions sont relues pour garantir une qualité sans failles, et nos contrats comportent tous une clause de confidentialité. 
-    Nous pouvons également fournir des traductions assermentées sur demande. Pour toute première collaboration avant le 15 avril, nous vous offrons 10% sur votre première facture.
+  %p Si vous pouvez vous permettre un petit malentendu, continuez avec la traduction automatique. Si vous tenez à votre image de marque, contactez <b>DELUXE TRADUCTION.</b>
 
+  %p Nous proposons des traductions dans <b> toutes les combinaisons de langues,</b> afin de répondre au mieux à vos besoins. Toutes nos traductions sont relues pour garantir une qualité sans failles, et nos contrats comportent tous une clause de confidentialité. Nous pouvons également fournir des traductions assermentées sur demande. 
 
-  %p 
-    Nous proposons également des prestations de <b>permanence téléphonique</b> sans engagement, secrétariat, rédaction,transcription audio et création de sites internet.
+  %p Nous proposons également des prestations de <b>permanence téléphonique</b> sans engagement, secrétariat, rédaction, transcription audio et création de sites internet. 
 
-  %p Pour plus d’informations,vous pouvez visiter notre site :
-
+  %p Pour plus d’informations, vous pouvez visiter notre site :
   .url(style='text-align:center;margin-bottom: 20px;')
     = link_to 'www.deluxetraduction.com', 'http://www.deluxetraduction.com/fr'
 
-  %p 
-    Je me tiens à votre disposition pour tous renseignements à l’adresse <b>(merci d’envoyer les documents à traduire par e-mail pour un devis en indiquant la combinaison de langues)</b> 
+  %p Nous restons à votre disposition pour tous renseignements à l’adresse <b>(merci d’envoyer les documents à traduire par e-mail pour un devis en indiquant la combinaison de langues)</b> 
 
   %div.contact(style='text-align: center; ')
     = mail_to 'contact@deluxetraduction.com' 
     %br ou par téléphone au <b>09-70-20-08-30</b>
-  
+
   .address
-    %b 
-      Elodie <br />
+    %b
       Deluxe Traduction <br />
       75015 Paris
