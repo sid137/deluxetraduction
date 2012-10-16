@@ -36,3 +36,6 @@ gem 'haml'
 #   gem 'webrat'
 # end
 
+group :development do
+  gem 'heroku'
+end
